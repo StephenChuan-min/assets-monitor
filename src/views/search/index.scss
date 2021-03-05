@@ -1,0 +1,25 @@
+.search-wrapper {
+  text-align: center;
+  p {
+    font-size: 36px;
+    line-height: 1;
+    color: $common-base;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .tab-search {
+    width: 856px;
+    margin-left: 163px;
+    position: relative;
+    .high-search{
+        color: $fontColor-base-2;
+        font-size: 15px;
+        cursor: pointer;
+        text-decoration: underline;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 15px;
+    }
+  }
+}

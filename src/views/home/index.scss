@@ -1,0 +1,87 @@
+.home-container {
+  .home-box{
+    background-color: #f0f1f5 !important;
+    .home-notice{
+      width: 1200px;
+      background-color: #F0F7FF !important;
+      border: 1px solid #77B9F9;
+      border-radius: 2px;
+      padding: 8px;
+      position: relative;
+      font-size: 12px;
+      &-title{
+        line-height: 12px;
+        vertical-align: middle;
+        display: inline-block;
+      }
+      &-content{
+        max-width: 1020px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: inline-block;
+      }
+      &-link{
+        margin-left: 10px;
+        vertical-align: top;
+      }
+      &-link:hover{
+        text-decoration: underline;
+      }
+      &-close{
+        position: absolute;
+        right: 12px;
+        font-size: 10px;
+        color: $text-link;
+        cursor: pointer;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        &-img{
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
+  &-line{
+    height: 11px;
+    background-color: $background-base;
+  }
+  &-header {
+    height: 116px;
+  }
+  &-horizontal-mark-line {
+    height: 12px;
+    width: 100%;
+    background-color: $background-base;
+  }
+  &-content {
+    background-color: $background-base;
+    height: 780px;
+    &-left {
+      vertical-align: top;
+      display: inline-block;
+      height: 100%;
+      width: 594px
+    }
+    &-middle {
+      vertical-align: top;
+      display: inline-block;
+      width: 12px
+    }
+    &-right {
+      vertical-align: top;
+      background-color: $background-antd-border;
+      display: inline-block;
+      height: 100%;
+      width: 594px;
+      &-quickStart {
+        height: 121px;
+      }
+      &-overview {
+        height: 578px;
+      }
+    }
+  }
+}

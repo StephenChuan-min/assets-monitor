@@ -1,0 +1,29 @@
+.business-related-tag {
+  height: 16px;
+  line-height: 16px;
+  width: 100%;
+  margin-left: 10px;
+  padding: 3px 10px;
+  font-size: 10px;
+  vertical-align: text-bottom;
+}
+.limit-height {
+  color: $common-warning;
+  border: 1px solid $common-warning;
+  background-color: #FDF8F4;
+}
+
+.bankruptcy-reorganization {
+  color: $common-error;
+  border: 1px solid $common-error;
+  background-color: #FFE7E7;
+}
+
+.business-table-edit-btn {
+  width: 160px;
+  height: 34px;
+  margin-top: 40px;
+  span {
+    font-size: 14px !important;
+  }
+}

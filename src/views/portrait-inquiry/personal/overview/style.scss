@@ -1,0 +1,35 @@
+.yc-overview-title {
+  padding: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: $text-title;
+  border-bottom: 1px solid $background-line;
+}
+.yc-overview-container {
+  padding: 20px;
+  .overview-container-title {
+    font-size: 14px;
+    color: $text-title;
+    height: 16px;
+    line-height: 16px;
+    .container-title-num {
+      display: inline-block;
+      font-weight: 500;
+      margin-right: 6px;
+      height: 14px;
+      line-height: 14px;
+      position: relative;
+      bottom: 3px;
+    }
+    .container-title-name {
+      display: inline-block;
+      height: 14px;
+      line-height: 14px;
+      position: relative;
+      bottom: 3px;
+    }
+  }
+  .overview-container-content {
+    padding: 20px 0 20px 10px;
+  }
+}

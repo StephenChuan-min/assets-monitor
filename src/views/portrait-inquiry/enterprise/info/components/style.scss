@@ -1,0 +1,73 @@
+.yc-inquiry-public-table {
+  .yc-base-content {
+    margin-top: 10px;
+    margin-bottom: 27px;
+    width: 1043px;
+    table{
+      width: 100%;
+      border-collapse: separate;
+      border-spacing:0;
+      border:1px solid $border-base;
+      border-bottom: none;
+      border-right: none;
+
+      tr td{
+        padding: 11px 20px;
+        font-size: 12px;
+        border-bottom: 1px solid $border-base;
+        border-right: 1px solid $border-base;
+        color: $text-title;
+        width: 341px;
+      }
+      tr td:first-child,tr td:first-child  + td + td {
+        width:180px ;
+        text-align: right;
+        background-color: $background-base;
+      }
+    }
+  }
+  .yc-base-table {
+    margin-top: 10px;
+    margin-bottom: 27px;
+  }
+  .yc-base-infoTitle {
+    width: 180px;
+    height: 40px;
+    display: inline-block;
+    background-color: $background-base;
+    color: $text-title;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: right;
+    padding-right: 20px;
+    border-top: 1px solid $border-base;
+    border-right: 1px solid $border-base;
+  }
+  .yc-base-infoName {
+    width: 340px;
+    height: 40px;
+    line-height: 40px;
+    color: $text-title;
+    font-size: 12px;
+    display: inline-block;
+    padding-left: 20px;
+    border-top: 1px solid $border-base;
+    //border-right: 1px solid $border-base;
+  }
+  .yc-td-hl {
+    max-width: 600px;
+    em {
+      color: #FB5A5C;
+      font-style: normal;
+    }
+  }
+  .yc-Stock-name {
+    width: 1160px;
+    height: 40px;
+    background: $background-base;
+    line-height: 40px;
+    padding-left: 20px;
+    color: $text-content;
+    font-size:12px;
+  }
+}

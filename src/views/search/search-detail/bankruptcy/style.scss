@@ -1,0 +1,24 @@
+.yc-content-query {
+  .yc-header-title {
+    line-height: 30px;
+    color: #929292;
+    font-size: 12px;
+  }
+  .yc-td-hl {
+    max-width: 600px;
+    em {
+      color: #FB5A5C;
+      font-style: normal;
+    }
+  }
+  .yc-td-header {
+    color: $fontColor-base-2;
+    margin-bottom: 6px;
+    display: inline-block;
+    &:hover {
+      color: #23527C;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}

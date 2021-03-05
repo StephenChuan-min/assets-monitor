@@ -1,0 +1,50 @@
+.business-auction-container {
+  display: inline-block;
+  line-height: 12px;  /*单独给子元素设置行高，覆盖父级元素的行高*/
+  vertical-align: middle;  /*基线居中对齐*/
+  width: 100%;
+  padding-top: 16px;
+  &-price {
+    color: #4E5566;
+    font-size: 12px;
+    width: 200px;
+    margin-right: 35px;
+    line-height: 18px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    bottom: 5px;
+    &-line {
+      height: 68px;
+      width: 1px;
+      background: #F0F0F0;
+      right: 0;
+      top: -5px;
+      position: absolute;
+    }
+    &-icon {
+      font-size: 20px;
+    }
+  }
+  &-card {
+    color: #4E5566;
+    font-size: 12px;
+    padding-bottom: 16px;
+    &-name {
+      display: inline-block;
+      width: 60px;
+      text-align: justify;
+      text-justify: distribute-all-lines;
+      text-align-last: justify;
+    }
+    &-info {
+      display: inline-block;
+      vertical-align: top;
+    }
+    &-num {
+      color: $text-title;
+      padding-right: 5px;
+      font-weight: bold;
+    }
+  }
+}

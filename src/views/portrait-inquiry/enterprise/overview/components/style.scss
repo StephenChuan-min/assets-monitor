@@ -1,0 +1,53 @@
+.yc-role-container {
+  margin: 20px 0 20px 20px;
+  font-size: 12px;
+  .yc-role-icon {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #1c80e1;
+    display: inline-block;
+    position: relative;
+    bottom: 1px;
+    margin-right: 5px;
+  }
+  .yc-role-name {
+    display: inline-block;
+    color: #4e5566;
+    width: 100px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  .yc-role-num {
+    display: inline-block;
+    color: #20242e;
+    margin-right: 20px;
+    text-align: right;
+  }
+  .yc-role-description {
+    display: inline-block;
+    color: #7d8699;
+  }
+  .yc-role-warning {
+    color: #fb5a5c;
+  }
+}
+
+.yc-basic {
+  font-size: 12px;
+  display: inline-block;
+  width: 270px;
+  margin-bottom: 8px;
+  .yc-basic-name {
+    display: inline-block;
+    color: #7d8699;
+    width: 64px;
+    text-align: right;
+    margin-right: 5px;
+  }
+  .yc-basic-description {
+    display: inline-block;
+    color: #20242e;
+  }
+}
+

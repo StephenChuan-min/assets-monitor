@@ -1,0 +1,19 @@
+.risk-detail-season {
+  .ant-confirm-title{
+    color: #181D27;
+    font-size: 16px;
+  }
+  .ant-confirm-content {
+    margin-left: 20px !important;
+    .risk-detail-season-list{
+      font-size: 14px;
+      li{
+        margin:25px 0;
+      }
+      .list-content{
+        color: $fontColor-base;
+      }
+    }
+  }
+}
+

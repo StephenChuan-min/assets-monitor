@@ -1,0 +1,42 @@
+.status-dot{
+  display: block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 42%;
+  border-radius: 50%;
+}
+
+.status-text{
+  margin-left: 10px;
+}
+
+.modal-content{
+  font-size: 14px;
+  line-height: 22px;
+  color: #20242E;
+}
+
+.view-content-modal{
+  .ant-modal-footer{
+    text-align: center;
+  }
+}
+
+.limit-status{
+  color: #3DBD7D;
+  border: 1px solid #94D6B5;
+  background: #F4FFF9;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 1px;
+  margin-left: 10px;
+}
+
+.obligor-type{
+  display: inline-block;
+  width: 60px;
+  text-align: justify;
+  text-align-last: justify;
+  color: #7D8699;
+}

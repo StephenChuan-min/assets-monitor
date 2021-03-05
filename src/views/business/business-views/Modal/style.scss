@@ -1,0 +1,113 @@
+.pendingModal {
+  .pendingModal-businessNo {
+    max-height: 250px;
+    overflow: auto;
+    margin-bottom: 15px;
+    .ant-form-item {
+      margin-bottom: 5px !important;
+    }
+  }
+  // .pendingModal-fontsize-bottom {
+  //     .ant-form-item {
+  //       margin-bottom: 5px !important;
+  //   }
+  // }
+}
+
+.business-modal{
+  .business-tips{
+    background-color: $background-list;
+    width: 407px;
+    border-radius: 2px;
+    padding: 8px 20px;
+    margin: 14px auto;
+    &-icon{
+      font-size: 14px;
+      color: $text-remark;
+      margin-right: 8px;
+      vertical-align: top;
+    }
+    &-title{
+      display: inline-block;
+      color: $text-remark;
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 400;
+      width: 345px;
+    }
+  }
+
+  .business-oper{
+    margin-top: 20px;
+    margin-left: 15px;
+    &-name{
+      vertical-align: top;
+      font-size: 14px;
+      color: #262626;
+    }
+    &-choose{
+      display: inline-block;
+      &-box{
+        &-link{
+          margin-left: 8px;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+        &-upload{
+          color: #595959;
+          font-size: 14px;
+        }
+        .yc-business-btn-icon{
+          font-size: 14px;
+          margin-right: 8px;
+          color: #595959;
+        }
+        .yc-upload{
+          &:hover{
+            .business-oper-choose-box-upload{
+              color: $text-btn-hover;
+            }
+            .yc-business-btn-icon{
+              color: $text-btn-hover;
+            }
+          }
+        }
+      }
+      &-file{
+        color: #1275E0;
+        font-size: 14px;
+        margin-top: 8px;
+      }
+      &-over{
+        margin-top: 8px;
+        color: #F82626;
+        font-size: 14px;
+      }
+      &-tips{
+        margin-top: 8px;
+        font-size: 14px;
+        color: $text-remark;
+      }
+    }
+  }
+  .ant-modal-body{
+    padding-bottom: 25px;
+  }
+  .ant-modal-footer{
+    display: none;
+  }
+}
+
+.error-modal{
+  .ant-modal-body{
+    padding: 30px;
+  }
+  .ant-confirm-title{
+    font-size: 16px;
+  }
+  .ant-confirm-content{
+    font-size: 14px;
+  }
+}
+

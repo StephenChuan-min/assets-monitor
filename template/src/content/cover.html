@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		@font-face{font-family: "Alibaba PuHuiTi R";src:url("/usr/share/fonts/zh_CN/Alibaba-PuHuiTi-Regular.otf")}
+		@font-face{font-family: "Alibaba PuHuiTi M";src:url("/usr/share/fonts/zh_CN/Alibaba-PuHuiTi-Medium.otf")}
+		* {
+			line-height: 1.5;
+			padding: 0;
+			margin: 0;
+			color: #20242e;
+			font-size: 13px;
+			list-style: none;
+			font-family: "Alibaba PuHuiTi R", Arial, serif;
+		}
+		body {
+			padding: 2px;
+			background: #ffffff url("../../img/watermark.png") repeat-y center top;
+			background-size: 85%; }
+		/* 通用样式*/
+		.exp-title{
+		}
+		.exp-title .title{
+			margin-top: 90px;
+			display: block;
+			text-align: center;
+			line-height: 400px;
+			height: 400px;
+			font-size: 80px;
+			color: #384482;
+		}
+		.name-content{
+			text-align: center;
+			height: 200px;
+		}
+		.exp-title .name{
+			display: block;
+			text-align: center;
+			line-height: 60px;
+			height: 50px;
+			font-size: 50px;
+			color: #20242E;
+		}
+		.exp-title .time{
+			margin-top: 300px;
+			display: block;
+			text-align: center;
+			line-height: 50px;
+			height: 50px;
+			font-size: 36px;
+			color: #20242E;
+		}
+
+	</style>
+	<meta charset="UTF-8">
+	<title>债务人详情报告</title>
+</head>
+<body>
+<!-- 封面 -->
+<div class="exp-title">
+	<div class="title">{base.title}</div>
+	<div class="name-content">{base.userInfo}</div>
+	<div class="time">{base.queryTime}</div>
+</div>
+</body>
+
+</html>

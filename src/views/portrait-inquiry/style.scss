@@ -1,0 +1,152 @@
+//  画像查询 样式
+.yc-portrait-inquiry{
+  .ant-table-body tbody tr:nth-child(2n), .cTableContent tbody tr:nth-child(2n) {
+    background: #ffffff;
+  }
+  .ant-table-body tbody tr:nth-child(2n):hover, .cTableContent tbody tr:nth-child(2n):hover {
+    background: #ebf1fa;
+  }
+  .inquiry-list-regStatus{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0 10px;
+    margin-left: 10px;
+    font-weight: normal;
+    border: 1px solid $border-base;
+  }
+  .regStatus-green{
+    border: 1px solid #94D6B5;
+    background-color: #F4FFF9;
+    color: $common-success;
+  }
+  .regStatus-red{
+    border: 1px solid #FF9293;
+    background-color: #FFF3F3;
+    color: $common-error;
+  }
+  .regStatus-orange{
+    border: 1px solid $common-warning;
+    background-color: #fef9f3;
+    color: $common-warning;
+  }
+  .yc-inquiry-common{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E5E5E5;
+    .yc-query-item{
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 20px;
+    }
+  }
+  .yc-inquiry-view{
+    padding: 20px 0;
+    .yc-inquiry-title{
+      padding: 80px 0 50px 0;
+      font-size: 36px;
+      color: $common-base;
+      text-align: center;
+    }
+    .yc-inquiry-content{
+      padding: 36px;
+      width: 800px;
+      margin: 0 auto;
+      border: 1px solid $common-base;
+      .yc-query-item{
+        margin:12px 0;
+        .ant-radio-wrapper{
+          font-size: 14px;
+
+        }
+      }
+      .yc-query-item-text1{
+        margin-right: 20px;
+      }
+      .yc-query-item-text1,.yc-query-item-text2{
+        display: inline-block;
+      }
+    }
+    .yc-to-go-list{
+      text-align: center;
+      button{
+        display: inline-block;
+        margin: 20px 20px 20px 0;
+      }
+    }
+  }
+  .yc-inquiry-list{
+   .assets-info-content li {
+     .list-title{
+       width: auto;
+     }
+   }
+    .list-content-total{
+      padding:16px 20px;
+      border-bottom: 1px solid $border-base;
+      span{
+        @extend .yc-public-normal
+      }
+    }
+    .content-list{
+      padding: 20px;
+    }
+
+    .inquiry-query{
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+      margin: 20px 20px 0 20px;
+    }
+
+  }
+  .mark-line{
+    height:12px ;
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+
+  .thin-line{
+    height: 1px ;
+    width: 100%;
+    background-color: #dadde6;
+  }
+
+  .yc-intro-sub-items{
+    padding: 16px 0 12px 0;
+    // border-bottom: 1px solid $border-base;
+    .intro-btn-items{
+      margin-right: 16px;
+      margin-bottom: 10px;
+      min-width: 92px;
+    }
+  }
+  .yc-inquiry-public-table{
+    .yc-tabs-simple-prefix{
+      @extend .yc-public-normal-bold;
+      min-width:90px;
+      width: auto;
+      line-height: 14px;
+      border-right: 1px solid $border-base;
+      border-left: 3px solid $text-link;
+      margin: 12px 15px 12px 0;
+      padding-right: 20px;
+      padding-left: 7px;
+      float: left;
+    }
+    .inquiry-public-table{
+      padding-top: 5px;
+    }
+  }
+  .yc-table-pagination{
+    padding-bottom: 10px;
+  }
+  .yc-assets-auction .assets-info-content li .list-title {
+    width:auto;
+  }
+}
+
+.queryView-box{
+  padding: 20px 20px 0 20px;
+}
+

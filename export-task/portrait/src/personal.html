@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<style>
+		___style___
+	</style>
+	<meta charset="UTF-8">
+	<title>债务人画像查询报告</title>
+</head>
+<body>
+<!-- 基本信息 -->
+<div class="exp-info border-b">
+	<div class="icon firstName">
+		{info.firstName}
+	</div>
+	<div class="info">
+		<li class="font-l">
+			<span class="n-title name-dishonest">
+				{info.name}
+				{info.dishonest}
+			</span>
+		</li>
+		<li class="mg8-0">
+			<div class="nAndI">
+				<span class="n-title">证件号：</span>
+				<span class="n-desc">{info.number}</span>
+			</div>
+		</li>
+		<li>
+			<div class="nAndI ">
+<!--				<span class="n-title">证件号：</span>-->
+<!--				<span class="n-desc">{info.formerNames}</span>-->
+			</div>
+		</li>
+	</div>
+</div>
+
+<!-- 概览模块 -->
+
+<!-- 概览-资产概况 -- start -->
+<div class="{overview.asset.display}">
+	<div class="entry-title border-b">
+		<div class="fw-bold font-xl">资产概况</div>
+	</div>
+
+	<!-- 资产拍卖 -->
+	<div class="padding6 {overview.B10201.display}">
+		<div class="entry-title ">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.B10201.total}条</span>
+				<span>相关资产拍卖</span>
+			</div>
+		</div>
+		<div class="{overview.B10201.role.display}">
+			<div class="fw-bold second-title">角色分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.B10201.role.list}
+			</table>
+		</div>
+		<div class="{overview.B10201.result.display}">
+			<div class="fw-bold second-title">拍卖结果分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.B10201.result.list}
+			</table>
+		</div>
+	</div>
+
+	<!-- 代位权信息 -->
+	<div class="padding6 {overview.B10202.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.B10202.total}条</span>
+				<span>代位权 - 裁判文书</span>
+			</div>
+			<div class="{overview.B10202.year}">
+				<div class="fw-bold second-title">年份分布</div>
+				<table class="table-td-20 table-border mg8-0">
+					{overview.B10202.year.list}
+				</table>
+			</div>
+			<div class="{overview.B10202.reason}">
+				<div class="fw-bold second-title">案由分布</div>
+				<table class="table-td-20 table-border mg8-0">
+					{overview.B10202.reason.list}
+				</table>
+			</div>
+			<div class="{overview.B10202.case}">
+				<div class="fw-bold second-title">案件类型分布</div>
+				<table class="table-td-25 table-border mg8-0">
+					{overview.B10202.case.list}
+				</table>
+			</div>
+		</div>
+	</div>
+
+</div>
+<!-- end -->
+
+<!-- 概览-风险情况 -- start -->
+<div class="{overview.risk.display}">
+	<div class="entry-title border-b">
+		<div class="fw-bold font-xl">风险情况</div>
+	</div>
+	<!-- 涉诉 -->
+	<div class="padding6 {overview.B10203.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.B10203.total}条</span>
+				<span>涉诉信息（涉诉文书）</span>
+			</div>
+			<div class="{overview.B10203.year}">
+				<div class="fw-bold second-title">年份分布</div>
+				<table class="table-td-20 table-border mg8-0">
+					{overview.B10203.year.list}
+				</table>
+			</div>
+			<div class="{overview.B10203.reason}">
+				<div class="fw-bold second-title">案由分布</div>
+				<table class="table-td-20 table-border mg8-0">
+					{overview.B10203.reason.list}
+				</table>
+			</div>
+			<div class="{overview.B10203.case}">
+				<div class="fw-bold second-title">案件类型分布</div>
+				<table class="table-td-25 table-border mg8-0">
+					{overview.B10203.case.list}
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- 失信记录 -->
+	<div class="padding6 {overview.B10204.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.B10204.total}条</span>
+				<span>失信记录</span>
+			</div>
+			<div class="fw-bold second-title">年份分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.B10204.year.list}
+			</table>
+		</div>
+	</div>
+	<!-- 税收违法 -->
+	<div class="padding6 {overview.B10205.display}">
+		<div class="entry-title ">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.B10205.total}条</span>
+				<span>税收违法</span>
+			</div>
+		</div>
+		<div class="{overview.B10205.role.display}">
+			<div class="fw-bold second-title">角色分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.B10205.role.list}
+			</table>
+		</div>
+	</div>
+</div>
+<!-- end -->
+
+
+<!-- 资产拍卖类目 -->
+<div class="{asset.accurate.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">资产拍卖（智能精准匹配 {asset.accurate.total}）</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			<!-- 资产拍卖列表 -->
+			{asset.accurate.list}
+		</table>
+	</div>
+</div>
+
+<!-- 代位权【裁判文书】类目 -->
+<div class="{subrogation.judgment.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">代位权（裁判文书 {subrogation.judgment.total}）</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{subrogation.judgment.list}
+		</table>
+	</div>
+</div>
+
+<!-- 【涉诉文书】类目 -->
+<div class="{lawsuit.judgment.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">涉诉文书 {lawsuit.judgment.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{lawsuit.judgment.list}
+		</table>
+	</div>
+</div>
+
+<!-- 【失信记录】类目 -->
+<div class="{lawsuit.dishonest.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">失信记录 {lawsuit.dishonest.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{lawsuit.dishonest.list}
+		</table>
+	</div>
+</div>
+
+<!-- 经营【税收违法 】类目 -->
+<div class="{tax.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">税收违法 {tax.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{tax.list}
+		</table>
+	</div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,466 @@
+// 资产拍卖-资产信息
+.assets-info-content {
+  // margin-left: 10px;
+  li {
+    padding-bottom: 2px;
+    line-height: 20px;
+    display: block;
+
+    .list {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .list-title {
+      color: $text-remark;
+      width: 65px;
+      text-align: justify;
+      text-justify: distribute-all-lines;
+      text-align-last: justify;
+    }
+    .list-title-50{
+      width: 50px;
+    }
+    .list-title-colon{
+      color: $text-remark;
+      width: 12px;
+      margin-left: 2px;
+      overflow:hidden;
+    }
+    .list-content {
+      max-width: 160px;
+      color: $text-title;
+    }
+    .none-width{
+      max-width: none!important;
+      width: auto;
+    }
+    .list-split{
+      display: inline-block;
+      vertical-align: top;
+      width: 1px;
+      height: 100%;
+      margin: 0 15px 0 10px;
+      background: $border-base;
+    }
+  }
+
+  .list-dishonest {
+    position: relative;
+
+    .list-dishonest-status {
+      position: absolute;
+      left: 160px;
+      bottom: 8px;
+      width: 48px;
+    }
+  }
+}
+/* 基本公共样式 ---------- start  */
+.yc-assets-auction {
+
+  .assets-tabs-right {
+    li {
+      display: inline-block;
+      padding: 9px 5px;
+
+      img {
+        display: inline-block;
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+      }
+
+      span {
+        cursor: pointer;
+        margin-left: 5px;
+        line-height: 16px;
+        font-size: 12px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .assets-auction-action {
+    padding: 20px 0 16px;
+    .yc-btn {
+      margin-right: 10px;
+    }
+    .export-style{
+      float: right;
+    }
+  }
+
+  .yc-batch-management{
+    padding: 20px 0 16px;
+    text-align: right;
+    .yc-btn {
+      margin-right: 10px;
+    }
+  }
+
+  .yc-icon-recovery-title {
+    margin-right: 15px;
+    font-size: 13px;
+    color: $text-link;
+    line-height: 30px;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .yc-icon-recovery {
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-right: 3px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../assets/img/icon_recovery_n.png");
+  }
+  // 资产拍卖-资产信息
+  .assets-info-content {
+    // margin-left: 10px;
+    li {
+      &:last-child{
+        padding-bottom: 0;
+      }
+      padding-bottom: 2px;
+      line-height: 20px;
+      display: block;
+
+      .list {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .list-title {
+        color: $text-remark;
+        width: 65px;
+        text-align: justify;
+        text-justify: distribute-all-lines;
+        text-align-last: justify;
+      }
+      .list-title-colon {
+        color: $text-remark;
+        width: 12px;
+        margin-left: 2px;
+        overflow: hidden;
+      }
+
+      .list-content {
+        max-width: 160px;
+        color: $text-title;
+      }
+
+      .list-content-auto {
+        color: $text-title;
+      }
+    }
+
+    .list-dishonest {
+      position: relative;
+
+      .list-dishonest-status {
+        position: absolute;
+        left: 160px;
+        bottom: 8px;
+        width: 48px;
+      }
+    }
+  }
+
+  // 资产拍卖-资产信息
+  // 资产拍卖-拍卖信息
+  .yc-assets-table-info {
+
+    .table-info-title {
+      max-width: 360px;
+      display: block;
+    }
+
+    .list-width-120 {
+      width: 120px;
+    }
+
+    .list-width-180 {
+      width: 180px;
+    }
+
+    .table-info-list {
+      display: inline-block;
+      line-height: 22px;
+      .info-tag{
+        border-radius: 2px;
+        display: inline-block;
+        margin: 2px 0;
+        padding: 3px 6px;
+        line-height: 1;
+        font-size: 12px;
+        color: #FFFFFF;
+      }
+      .info-tag_add{
+        color: $common-warning;
+        //border: 1px solid $common-warning;
+        background-color: #FFEDE0;
+      }
+      .info-tag_change{
+        color: $common-error;
+        //border: 1px solid $common-error;
+        background-color: #FFE7E7;
+      }
+      .table-info-list-history{
+        line-height: 1;
+        height: 24px;
+        span {
+          line-height: 0
+        }
+      }
+      .info {
+        line-height: 22px;
+        display: inline-block;
+        vertical-align: middle;
+        color: $text-title;
+      }
+
+      .info-title {
+        color: $text-remark;
+      }
+      .list {
+        display: inline-block;
+        vertical-align: top;
+      }
+      .list-title {
+        color: $text-remark;
+        width: 60px;
+        text-align: justify;
+        text-justify: distribute-all-lines;
+        text-align-last: justify;
+      }
+      .list-title-colon{
+        color: $text-remark;
+        width: 12px;
+        margin-left: 2px;
+        overflow:hidden;
+      }
+      .info-content {
+        max-width: 115px;
+      }
+
+      .info-over {
+        color: $common-error;
+      }
+
+      .info-auction-1 {
+        color: $color-warning-text;
+      }
+      .info-auction-3 {
+        color: #4267cb;
+      }
+      .info-auction-5 {
+        color: #3DBD7D;
+      }
+
+    }
+  }
+}
+.yc-assets-auction-action {
+  .auction-recovery {
+    background-color: $common-error;
+    color: #fff;
+    padding: 3px 5px;
+    font-size: 12px;
+    line-height: 14px;
+    white-space: nowrap;
+    margin-bottom: 10px;
+  }
+
+  .auction-button {
+    width: 75px;
+    margin-bottom: 6px;
+  }
+}
+.yc-assets-auction-table-row {
+  vertical-align: top;
+
+  td {
+    position: relative;
+  }
+
+}
+.yc-assets-info-img {
+  // width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  border: 0;
+  position: absolute;
+}
+.yc-content-query {
+  .yc-query-item {
+    position: relative;
+    margin-right: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 16px;
+
+    .yc-query-item-title {
+      padding: 9px 3px;
+      height: 34px;
+      line-height: 14px;
+      font-size: 12px;
+    }
+  }
+
+  .yc-more-option {
+    height: 34px;
+    font-size: 12px;
+    line-height: 34px;
+    margin-left: 20px;
+    color: $text-link;
+
+    &:hover {
+      color: $text-link-hover;
+    }
+  }
+
+  .yc-query-item-btn {
+    float: right !important;
+    margin-right: 0 !important;
+    .yc-btn {
+      margin: 0 0 0 10px;
+    }
+    button {
+      margin-left: 5px;
+    }
+  }
+}
+
+
+.assets-matching-reason-wrapper {
+  em{
+    color: $color-alert-error;
+    font-style: normal;
+  }
+  .reason-content-wrapper {
+    max-height: 64px;
+    overflow: hidden;
+    line-height: 16px;
+    color: $text-title;
+  }
+  .content-canClose{
+    max-height: none!important;
+  }
+  .reason-action-none{
+    display: none;
+  }
+  .reason-action {
+    overflow: hidden;
+    line-height: 14px;
+    margin-top: 5px;
+    .action-ellipsis {
+      float: left;
+    }
+
+    .action-btn {
+      float: right;
+      cursor: pointer;
+      margin-right: 4px;
+
+    }
+  }
+}
+.assets-matching-reason-wrapper {
+  em{
+    color: $color-alert-error;
+    font-style: normal;
+  }
+  .content-item-before{
+    em{
+      color: $text-remark;
+      text-decoration: line-through;
+      text-decoration-color:$common-error;
+    }
+  }
+
+  .reason-content-wrapper {
+    max-height: 64px;
+    overflow: hidden;
+    line-height: 16px;
+    color: $text-title;
+  }
+  .content-canClose{
+    max-height: none!important;
+  }
+  .reason-action-none{
+    display: none;
+  }
+  .reason-action {
+    overflow: hidden;
+    line-height: 14px;
+    margin-top: 5px;
+    .action-ellipsis {
+      float: left;
+    }
+
+    .action-btn {
+      float: right;
+      cursor: pointer;
+      margin-right: 4px;
+      color: $text-link;
+      &:hover{
+        color: $text-link-hover;
+      }
+      i{
+        margin-left: 3px;
+        font-size: 10px;
+      }
+
+    }
+  }
+}
+/* ---------- end  */
+
+// 一键导出居右20px
+.yc-all-export {
+  margin-right: 0;
+}
+
+.assets-an-info {
+  top: 25% !important;
+  width: 600px !important;
+
+  .ant-modal-body {
+    padding: 20px 20px 20px 20px !important;
+
+    .ant-confirm-title {
+      font-size: 16px;
+      display: inline-block;
+    }
+
+    .ant-confirm-line {
+      position: absolute;
+      width: 600px;
+      left: 0;
+      margin: 8px 0;
+      height: 1px;
+      background-color: $background-border;
+    }
+  }
+
+  //button {
+  //  width: 60px
+  //}
+}
+.yc-table-line {
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: #dadde6;
+  margin-left: 12px;
+  margin-right: 12px;
+  position: relative;
+  top: 2px;
+}

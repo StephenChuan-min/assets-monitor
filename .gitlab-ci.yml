@@ -1,0 +1,74 @@
+stages:
+  - install_deps
+  - build
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+    - docs
+
+# 安装依赖
+install_deps:
+  stage: install_deps
+  tags:
+    - font-group-runner
+  only:
+    - release
+    - dev-branch
+  script:
+    - node -v
+    - yarn config set registry http://172.18.255.8:8060/repository/npm-group/
+    # - yarn config set registry https://registry.npm.taobao.org
+    - yarn config set sass-binary-site https://npm.taobao.org/mirrors/node-sass
+    - yarn install
+
+# 编译
+build_step:
+  stage: build
+  tags:
+    - font-group-runner
+  only:
+    - release
+    - dev-branch
+  script:
+    - rm ./docs/* -rf
+    - cd ./src/utils/api/config
+    - mv -f dev.js index.js
+    - cat index.js
+    - yarn build:index
+
+# 拷贝
+deploy_step:
+  stage: deploy
+  tags:
+    - font-group-runner
+  only:
+   - release
+  script:
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan $DEPLOY_SERVER >> ~/.ssh/know_hosts
+    - chmod 644 ~/.ssh/know_hosts
+    - ssh -o StrictHostKeyChecking=no -p 22 work@$DEPLOY_SERVER "cd $DEPLOY_RESOURCE_PATH; chmod +x $DEPLOY_SHELL; ./$DEPLOY_SHELL; exit"
+    - scp -o StrictHostKeyChecking=no -r -P 22 ./docs/* work@172.18.255.251:/disk/web/front/asset-monitor/web
+
+# 拷贝
+deploy_step_dev:
+  stage: deploy
+  tags:
+    - font-group-runner
+  only:
+    - dev-branch
+  script:
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan $DEPLOY_SERVER >> ~/.ssh/know_hosts
+    - chmod 644 ~/.ssh/know_hosts
+    - ssh -o StrictHostKeyChecking=no -p 22 work@$DEPLOY_SERVER "cd $DEPLOY_RESOURCE_PATH_DEV; chmod +x $DEPLOY_SHELL; ./$DEPLOY_SHELL; exit"
+    - scp -o StrictHostKeyChecking=no -r -P 22 ./docs/* work@172.18.255.251:/disk/web/front/asset-monitor-dev/web
+

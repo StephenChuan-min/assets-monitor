@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		@font-face{font-family: "Alibaba PuHuiTi R";src:url("/usr/share/fonts/zh_CN/Alibaba-PuHuiTi-Regular.otf")}
+		@font-face{font-family: "Alibaba PuHuiTi M";src:url("/usr/share/fonts/zh_CN/Alibaba-PuHuiTi-Medium.otf")}
+		* {
+			line-height: 1.5;
+			padding: 0;
+			margin: 0;
+			color: #20242e;
+			font-size: 13px;
+			list-style: none;
+			font-family: "Alibaba PuHuiTi R", Arial, serif;
+		}
+		body {
+			padding: 2px;
+			background: #ffffff url("../img/watermark.png") repeat-y center top;
+			background-size: 85%; }
+		.exp-title {
+			text-align: center;
+		}
+		.exp-title .title {
+			margin: 300px 0 50px 0;
+			font-size: 40px;
+			color: #384482; }
+		.exp-title .name, .exp-title .number {
+			font-size: 27px; }
+		.exp-title .time {
+			margin: 650px 0 50px 0;
+			font-size: 18px; }
+		.exp-title p {
+			text-align: left;
+			font-size: 11px;
+			line-height: 18px;
+			color: #7d8699; }
+	</style>
+	<meta charset="UTF-8">
+	<title>债务人画像查询报告</title>
+</head>
+<body>
+<!-- 封面 -->
+<div class="exp-title">
+	<div class="title">债务人画像查询报告</div>
+	{base.info}
+	<div class="time">{base.dateTime} 查询</div>
+	<p>
+		· 本报告内容为 {base.dateTime} 查询的版本，您所看到的内容为该截止时间的数据快照。
+	</p>
+	<p>
+		· 本报告内容是源诚资产监控平台接受您的委托，基于公开信息挖掘的结果。源诚资产监控平台不对该查询结果的全面、准确、真实性负责。本报告应仅为您提供参考，真实结果请以各官方网站的公布结果为准。
+	</p>
+</div>
+</body>
+
+</html>

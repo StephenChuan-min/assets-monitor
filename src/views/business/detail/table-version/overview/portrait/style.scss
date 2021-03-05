@@ -1,0 +1,102 @@
+.yc-portrait-container {
+  //padding: 0 20px;
+  .overview-container-title {
+    font-size: 14px;
+    color: $text-title;
+    height: 16px;
+    line-height: 16px;
+    margin: 10px 20px 20px;
+    .overview-left-item {
+      width: 3px;
+      height: 16px;
+      background: $text-link;
+      display: inline-block;
+      margin-right: 7px;
+    }
+    .yc-business-icon {
+      width: 16px;
+      position: relative;
+      top: 3px;
+      cursor: pointer;
+      margin-left: 6px;
+    }
+    .container-title-num {
+      display: inline-block;
+      font-weight: 500;
+      margin-right: 6px;
+      height: 14px;
+      line-height: 14px;
+      position: relative;
+      bottom: 3px;
+    }
+    .container-title-name {
+      display: inline-block;
+      height: 14px;
+      line-height: 14px;
+      position: relative;
+      bottom: 3px;
+      font-weight: bold;
+    }
+  }
+  .overview-container-cardContent {
+    padding: 0 10px 0 30px;
+  }
+  .portrait-card-item {
+    display: inline-block;
+  }
+}
+
+.portrait-card-num {
+  font-size: 12px;
+  font-weight: bold;
+  color: $text-title;
+  margin-right: 2px;
+}
+.ant-table-tbody > tr > td {
+  position: relative;
+}
+.ant-table-tbody > tr > td,
+.ant-table-thead > tr > th {
+  padding: 12px 10px;
+  height: 44px;
+  font-size: 12px;
+}
+.table {
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: table;
+  border-color: grey;
+}
+.table > tbody > tr > th {
+  background-color: $background-base;
+  //border: 1px solid #dfe3eb;
+  border-left: 0;
+  font-size: 12px;
+}
+
+.table-striped tr > th {
+  padding: 13px 15px;
+  color: $text-content;
+  white-space: nowrap;
+}
+.treeTable tr > th:last-child {
+  border-right: 0;
+}
+.title-name {
+  width: 400px;
+}
+.yc-table-child {
+  color: $text-link;
+  text-decoration: none;
+  cursor: pointer;
+}
+.yc-table-body {
+  color: $text-link;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

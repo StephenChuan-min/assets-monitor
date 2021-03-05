@@ -1,0 +1,123 @@
+.monitor-card-container {
+  border:1px solid #E8E8E8;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+  position: relative;
+  &-arrow-icon {
+    font-size: 14px;
+    position: absolute;
+    right: 14px;
+    bottom: 35px;
+    margin: auto;
+  }
+  .card-header {
+    height: 38px;
+    line-height: 37px;
+    width: 100%;
+    border-bottom: 1px solid #E8E8E8;
+    position: relative;
+    &-left {
+      margin-left: 10px;
+      float: left;
+      .card-left-img {
+        vertical-align: sub;
+        width: 18px;
+        height: 18px;
+      }
+      .card-left-font {
+        display: inline-block;
+        color: $text-title;
+        font-size: 14px;
+        margin-left: 6px;
+        //font-weight: bold;
+      }
+      .card-content-role-itemLeft {
+        float: right;
+        margin-left: 35px;
+        .card-role-itemLeft-img {
+          vertical-align: sub;
+          width: 14px;
+        }
+        .portrait-card-num {
+          margin-left: 6px;
+        }
+      }
+    }
+    &-monitor-right {
+      float: right;
+      margin-right: 14px;
+      color: #FB5A5C !important;
+      font-size: 12px;
+      background-color: #FFE7E7;
+      height: 22px;
+      line-height: 22px;
+      margin-top: 8px;
+      padding: 0 10px;
+      text-align: center;
+      border-radius: 2px;
+      &-icon {
+        background-size: 5px 5px;
+        background-image: url('../../../assets/img/icon/home-readIcon.png');
+        width: 5px;
+        height: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;;
+      }
+      &-text {
+        display: inline-block;
+      }
+    }
+    &-icon {
+      font-size: 18px;
+      position: relative;
+      color: #7D8699;
+      vertical-align: bottom;
+    }
+  }
+  .excavate-card-content {
+    height: 80px;
+    line-height: 80px;
+    padding-left: 34px;
+  }
+  .risk-card-content {
+    height: 100px;
+    line-height: 100px;
+    padding-left: 34px;
+  }
+  .card-footer {
+    height: 35px;
+    //line-height: 35px;
+    color: #7D8699;
+    font-size: 12px;
+    width: 100%;
+    //border-top: 1px solid #e8e8e8;
+    position: relative;
+    text-align: right;
+    padding-right: 14px;
+  }
+  //&:hover {
+  //  background:rgba(255,255,255,1);
+  //  box-shadow:0 6px 10px 0 rgba(3,31,59,0.1);
+  //  border-radius:2px;
+  //  cursor: pointer;
+  //}
+}
+.monitor-card-noCount-hover {
+  &:hover {
+    background:rgba(255,255,255,1);
+    box-shadow:0 6px 10px 0 rgba(3,31,59,0.1);
+    border-radius:2px;
+    cursor: pointer;
+  }
+}
+.card-content-right-img {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  right: 10px;
+  top: 38px;
+  bottom: 0;
+  margin: auto;
+}

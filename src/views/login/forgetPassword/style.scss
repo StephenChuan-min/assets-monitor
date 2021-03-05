@@ -1,0 +1,260 @@
+.yc-verifyAccount-main {
+  //text-align: center;
+  height: 390px;
+  width: 446px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 45%;
+  left: 65%;
+  margin-top: -180px;
+  margin-left: -180px;
+  padding: 20px 30px 0 30px;
+  .yc-card-title {
+    color: $text-title;
+    font-weight: bold;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+  }
+  .yc-form-wapper {
+    position: relative;
+    .yc-verificationCode {
+      position: absolute;
+      right: 6px;
+      top: 0;
+      height: 44px;
+      cursor: pointer;
+    }
+    .yc-form-lable {
+      float: left;
+      width: 70px;
+      height: 38px;
+      line-height: 38px;
+      text-align: right;
+      font-size: 14px;
+      margin-right: 10px;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+    @media (min-width: 768px) {
+      .yc-login-input {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+      }
+    }
+    .yc-login-input {
+      display: block;
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #555;
+      background-color: #fff;
+      background-image: none;
+      //   border: 1px solid #ccc;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      -webkit-transition: border-color ease-in-out 0.15s,
+        -webkit-box-shadow ease-in-out 0.15s;
+      -o-transition: border-color ease-in-out 0.15s,
+        box-shadow ease-in-out 0.15s;
+      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+      position: relative;
+      height: 44px;
+      width: 300px;
+    }
+    .yc-writeCode-phone {
+      height: 38px;
+      line-height: 38px;
+      font-size: 14px;
+      vertical-align: middle;
+    }
+    .yc-form-writeCode {
+      position: absolute;
+      width: 125px;
+      right: 6px;
+      top: 0;
+      //background-color: transparent;
+      height: 38px;
+      //&:hover {
+      //  background-color: $text-btn-hover;
+      //}
+    }
+  }
+  .ant-form-explain {
+    margin-left: 80px;
+  }
+  .yc-from-noPhone {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 80px;
+    margin-bottom: 23px;
+    color: #428bca;
+    cursor: pointer;
+    &:hover {
+      color: $text-link-hover;
+      text-decoration: underline;
+    }
+  }
+  .yc-login-btn {
+    font-size: 14px;
+    width: 380px;
+    //margin-left: 80px;
+    margin-top: 50px;
+    text-align: center;
+    height: 44px;
+    line-height: 26px;
+    border-radius: 3px;
+    color: #fff;
+  }
+}
+.yc-changePassword-main{
+
+  height: 390px;
+  width: 610px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 45%;
+  left: 60%;
+  margin-top: -180px;
+  margin-left: -180px;
+  padding: 20px 30px 0 30px;
+  .yc-card-title {
+    color: $text-title;
+    font-weight: bold;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    width: 440px;
+  }
+  .yc-form-wapper {
+    position: relative;
+    .yc-form-lable {
+      float: left;
+      width: 70px;
+      height: 38px;
+      line-height: 38px;
+      text-align: right;
+      font-size: 14px;
+      margin-right: 10px;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+    @media (min-width: 768px) {
+      .yc-login-input {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+      }
+    }
+    .yc-login-input {
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #555;
+      background-color: #fff;
+      background-image: none;
+      //   border: 1px solid #ccc;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      -webkit-transition: border-color ease-in-out 0.15s,
+        -webkit-box-shadow ease-in-out 0.15s;
+      -o-transition: border-color ease-in-out 0.15s,
+        box-shadow ease-in-out 0.15s;
+      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+      position: relative;
+      height: 44px;
+      width: 300px;
+    }
+    .yc-writeCode-phone {
+      height: 38px;
+      line-height: 38px;
+      font-size: 14px;
+      vertical-align: middle;
+    }
+    .yc-form-writeCode {
+      position: absolute;
+      width: 125px;
+      right: 6px;
+      top: 0;
+      //background-color: transparent;
+      height: 38px;
+      //&:hover {
+      //  background-color: $text-btn-hover;
+      //}
+    }
+  }
+  .ant-form-explain {
+    margin-left: 80px;
+  }
+  .yc-from-noPhone {
+    font-size: 12px;
+
+    margin-left: 80px;
+    margin-bottom: 23px;
+    color: #428bca;
+    cursor: pointer;
+    &:hover {
+      color: $text-link-hover;
+      text-decoration: underline;
+    }
+  }
+  .yc-login-btn {
+    font-size: 14px;
+    width: 300px;
+    margin-left: 80px;
+    margin-top: 40px;
+    height: 44px;
+    line-height: 26px;
+    border-radius: 3px;
+    color: #fff;
+
+  }
+}
+.ant-popover {
+  .yc-poprver-true {
+    color: green;
+  }
+  .yc-poprver-false {
+    color: red;
+  }
+  .ant-popover-arrow {
+    &:after {
+      border-right-color: #F0F2F5;
+    }
+  }
+  .ant-popover-inner {
+    color: #181D27;
+    min-width: 165px;
+    background-color: #F0F2F5;
+    box-shadow: none;
+    .ant-popover-inner-content {
+      color: #181D27;
+      min-width: 165px;
+    }
+  }
+}
+.yc-login-back {
+  color: $text-link;
+  margin-top: 20px;
+  text-align: right;
+  font-size: 14px;
+  cursor: pointer;
+  width: 380px;
+ &:hover {
+   text-decoration: underline;
+   color: $text-link-hover;
+ }
+}

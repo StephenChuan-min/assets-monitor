@@ -1,0 +1,42 @@
+.change-modal {
+  .ant-modal-body {
+    padding: 24px 24px 44px 24px;
+  }
+  .ant-modal-title {
+    font-size: 16px;
+  }
+  .ant-table-tbody>tr>td, .ant-table-thead>tr>th {
+    padding: 12px 20px;
+  }
+  //.ant-table-body {
+  //  &::-webkit-scrollbar-thumb {
+  //     border-radius: 10px;
+  //    -webkit-box-shadow: inset 0 0 5px #7D8699;
+  //    background: #7D8699;
+  //  }
+  //  &::-webkit-scrollbar-track {
+  //    -webkit-box-shadow: inset 0 0 5px #B2B8C9;
+  //    border-radius: 0;
+  //    background: #B2B8C9;
+  //  }
+  //  &::-webkit-scrollbar {
+  //    width: 4px;
+  //    //height: 10px;
+  //  }
+  //}
+  .change-modal-colon {
+    display: inline-block;
+    margin-right: 4px;
+  }
+  .change-modal-label {
+    display: inline-block;
+    color: #7d8699;
+    width: 50px;
+    margin-right: 5px;
+    text-align: justify;
+    text-align-last: justify;
+  }
+  .change-modal-name {
+    color: $text-title;
+  }
+}

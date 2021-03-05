@@ -1,0 +1,41 @@
+.yc-content-query {
+  .yc-writ-tablebtn {
+    margin: 20px 0 16px;
+  }
+}
+.yc-trialRelation-title {
+  .sort {
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-size: contain;
+    vertical-align: top;
+    position: absolute;
+    margin-top: 1px;
+  }
+  &:hover {
+    cursor: pointer;
+    height: 17px;
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+    //.th-sort-default {
+    //  background-image: url("../../../../assets/img/icon/icon_arrow_desc.png");
+    //}
+    //.th-sort-down {
+    //  background-image: url("../../../../assets/img/icon/icon_arrow_asc.png");
+    //}
+    //.th-sort-up {
+    //  background-image: url("../../../../assets/img/icon/icon_arrow_desc.png");
+    //}
+  }
+  //.th-sort-default {
+  //  background-image: url("../../../../assets/img/icon/icon_arrow.png");
+  //}
+  .th-sort-down {
+    background-image: url("../../../../assets/img/icon/icon_arrow_desc.png");
+  }
+
+  .th-sort-up {
+    background-image: url("../../../../assets/img/icon/icon_arrow_asc.png");
+  }
+}

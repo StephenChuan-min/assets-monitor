@@ -1,0 +1,218 @@
+.dynamic-container {
+  background-color: $background-antd-border;
+  &-header {
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    padding-left: 20px;
+    font-weight: bold;
+    color: $text-title;
+    border-bottom: 1px solid $background-line;
+    &-name {
+      display: inline-block;
+    }
+    &-type {
+      display: inline-block;
+      font-size: 14px;
+      line-height: 14px;
+      margin-right: 22px;
+      height: 30px;
+      color: $text-title;
+      font-weight: 400;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .horizontal-line {
+      width: 1px;
+      height: 14px;
+      bottom: 1px;
+      margin: 0 20px;
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      background-color: $background-line;
+    }
+  }
+  .seven-update-content {
+    &-title {
+      line-height: 16px;
+      position: relative;
+      &-addNum {
+        &-icon {
+          background-image: url('../../../assets/img/icon/Fill.png');
+          vertical-align: top;
+          width:14px;
+          height:14px;
+          background-size: 14px 14px;
+          float: left;
+          margin-left: 8px;
+          margin-top: 6px;
+        }
+        &-text {
+          margin-left: 6px;
+          margin-right: 8px;
+          font-size: 12px !important;
+          &-bold{
+            font-weight: 600;
+            font-size: 14px !important;
+          }
+        }
+        display: inline-block;
+        height: 26px;
+        line-height: 26px;
+        min-width: 185px;
+        background-color: #FFF3F3;
+        color: $common-error;
+        position: absolute;
+        right: 0;
+        border-radius: 2px;
+      }
+      &-noNum {
+        position: absolute;
+        left: 153px;
+        top: 160px;
+        font-size: 12px;
+        &-findMore {
+          color: $text-link;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      &-item {
+        background: $text-link;
+        display: inline-block;
+        vertical-align: middle;
+        width: 3px;
+        height: 20px;
+        margin-right: 10px;
+      }
+      &-name {
+        color: $text-title;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      &-num {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 700;
+        padding: 0 5px;
+      }
+      &-icon {
+        background-image: url('../../../assets/img/icon/home-readIcon.png');
+        vertical-align: top;
+        position: absolute;
+        width:8px;
+        height:8px;
+        background-size: 8px 8px;
+      }
+    }
+    &-checkBtn{
+      margin-left: 14px;
+      width: 64px;
+      height: 24px;
+      padding: 0;
+      border-radius: 2px;
+    }
+  }
+}
+.home-import-list{
+  margin-top: 12px;
+  background-color: $background-antd-border;
+  .seven-update-content {
+    margin-top: 20px;
+    &-title {
+      padding: 16px 20px;
+      line-height: 16px;
+      position: relative;
+      &-addNum {
+        &-icon {
+          background-image: url('../../../assets/img/icon/Fill.png');
+          vertical-align: top;
+          width:14px;
+          height:14px;
+          background-size: 14px 14px;
+          float: left;
+          margin-left: 8px;
+          margin-top: 6px;
+        }
+        &-text {
+          margin-left: 6px;
+          margin-right: 8px;
+          font-size: 12px !important;
+          &-bold{
+            font-weight: 600;
+            font-size: 14px !important;
+          }
+        }
+        display: inline-block;
+        height: 26px;
+        line-height: 26px;
+        min-width: 185px;
+        background-color: #FFF3F3;
+        color: $common-error;
+        position: absolute;
+        right: 0;
+        border-radius: 2px;
+      }
+      &-noNum {
+        position: absolute;
+        left: 153px;
+        top: 115px;
+        font-size: 12px;
+        &-findMore {
+          color: $text-link;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      &-item {
+        background: $text-link;
+        display: inline-block;
+        vertical-align: middle;
+        width: 3px;
+        height: 20px;
+        margin-right: 10px;
+      }
+      &-name {
+        color: $text-title;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      &-num {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 700;
+        padding: 0 5px;
+      }
+      &-icon {
+        background-image: url('../../../assets/img/icon/home-readIcon.png');
+        vertical-align: top;
+        position: absolute;
+        width:8px;
+        height:8px;
+        background-size: 8px 8px;
+      }
+    }
+    &-checkBtn{
+      margin-left: 14px;
+      width: 64px;
+      height: 24px;
+      padding: 0;
+      border-radius: 2px;
+    }
+  }
+}
+.ant-table-tbody{
+  .typeName{
+    font-family: PingFang SC, Microsoft YaHei, Arial, sans-serif;
+    background-color: $background-antd-border;
+    font-size: 10px;
+    color: #4e5566;
+    font-weight: 600;
+  }
+}

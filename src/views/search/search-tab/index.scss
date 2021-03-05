@@ -1,0 +1,29 @@
+.yc-tabs-search {
+  text-align: left;
+  margin-bottom: 0;
+  .tabs-nav-item {
+    border: 1px solid #DADDE6;
+    display: inline-block;
+    padding: 12px 15px;
+    font-size: 16px;
+    line-height: 14px;
+    color: $text-title;
+    position: relative;
+    margin-right: -1px;
+    cursor: pointer;
+    &:hover{
+      border: 1px solid $common-base;
+      z-index:999;
+      color: $common-base;
+    }
+  }
+  .active {
+    color: #fff;
+    border-color: $common-base;
+    background-color: $common-base;
+    text-decoration: none;
+    &:hover{
+      color: #fff;
+    }
+  }
+}

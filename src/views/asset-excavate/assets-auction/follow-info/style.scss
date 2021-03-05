@@ -1,0 +1,175 @@
+.yc-follow-model{
+  .ant-modal-body{
+    padding: 0!important;
+  }
+  .font-title{
+    color: $text-title;
+    font-size: 14px;
+  }
+  .font-desc {
+    color: $text-content;
+    font-size: 14px;
+  }
+  .yc-assets-follow-body {
+    position: relative;
+    max-height: 520px;
+    padding: 30px 30px 0 30px;
+    overflow: auto;
+    .yc-follow-line {
+      margin: 10px 0;
+      height: 1px;
+      width: 100%;
+      background-color: $border-base;
+    }
+
+    .follow-add-title {
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: bold;
+      padding-bottom: 10px;
+
+      .anticon-plus-circle {
+        line-height: 15px;
+        color: $color-base;
+        font-size: 15px;
+        margin-right: 5px;
+
+      }
+    }
+    .follow-content{
+      .list-height-hr{
+        height: 10px;
+        width: 100%;
+      }
+      .ant-input-number-handler-wrap{
+        display: none;
+      }
+      .follow-list-item{
+        padding-left: 10px;
+        margin-bottom: 10px;
+        .list-item-title{
+          float: left;
+          width: 100px;
+          text-align: right;
+          font-size: 12px;
+          line-height: 28px;
+        }
+        .list-item-content{
+          margin-left: 110px;
+          min-height: 28px;
+          line-height: 28px;
+          width: 430px;
+          position: relative;
+          .remark-count{
+            display: inline-block;
+            min-width: 50px;
+            background-color: #FFFFFF;
+            height: 20px;
+            position: absolute;
+            padding-right: 5px;
+            text-align: right;
+            bottom: 1px;
+            right: 1px;
+            color: #999999;
+            padding-bottom: 4px;
+            line-height: 16px;
+            font-size: 12px;
+
+          }
+          .select-option-mark{
+            margin-left:15px
+          }
+          .ant-select-selection__choice__content{
+            .select-option-mark{
+              display: none;
+            }
+          }
+          .list-item-mark{
+            font-size: 12px;
+            color: #7D8699;
+          }
+          .ant-btn-loading{
+            padding-left: 22px!important;
+          }
+          .item-class{
+            vertical-align: top;
+
+          }
+        }
+      }
+    }
+
+
+    .ant-select-dropdown-menu-item:after{display: none!important;}
+  }
+
+}
+.yc-follow-list {
+  .follow-add-title{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  .follow-list-step {
+    margin-top:15px;
+    .ant-steps-title{
+      display: block;
+    }
+    .ant-steps-item-last{
+      .ant-steps-title{
+        padding-right: 10px!important;
+      }
+    }
+    .list-step-title-normal{
+      font-weight: 400;
+      margin-left: 5px;
+      float: right;
+    }
+    .mark-status-3, .mark-status-6{
+      padding: 0 5px;
+      background-color: #5487FF;
+      color: #FFFFFF;
+      border-radius: 2px;
+    }
+    .mark-status-9 {
+      padding: 0 5px;
+      background-color: #3DBD7D;
+      color: #FFFFFF;
+      border-radius: 2px;
+    }
+    .mark-status-12 {
+      padding: 0 5px;
+      background-color: #FFFFFF;
+      color: #999999;
+      border-radius: 2px;
+    }
+    .mark-status-15 {
+      padding: 0 5px;
+      background-color: #999999;
+      color: #FFFFFF;
+      border-radius: 2px;
+    }
+    .list-step-title-icon{
+      @extend .list-step-title-normal;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .list-step-title-mark-status{
+      margin-left: 10px;
+      @extend .list-step-title-normal;
+
+    }
+    .list-step-title-mark-time{
+      font-size: 14px;
+      color: $text-remark;
+      @extend .list-step-title-normal;
+
+    }
+    .ant-steps-head-inner{
+      .anticon {
+        color: rgb(130, 189, 240)!important;
+      }
+    }
+  }
+}

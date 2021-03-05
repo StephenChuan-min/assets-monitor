@@ -1,0 +1,126 @@
+/* 系统样式规范 --- start  */
+
+///* 1.颜色规范 */
+///* 系统色 */
+//导航、一级tab背景色
+$common-base: #384482;
+//导航经过背景色
+$common-base-hover: #43529C;
+//导航栏选中背景
+$common-base-active: #303a70;
+//警告、价格色
+$common-error: #FB5A5C;
+//通过、开启、成功提示色
+$common-success: #3DBD7D;
+//收藏、按钮背景色
+$common-warning: #FB8E3C;
+
+///* 文字色 */
+//一级标题、按钮文字、一级tab、二级tab
+$text-title: #20242E;
+//链接文字色
+$text-link: #1C80E1;
+// 按钮经过颜色
+$text-btn-hover: #1E8CFA;
+//链接文字经过色
+$text-link-hover: #186FC7;
+//列表标题文字色
+$text-content: #4E5566;
+//其他辅助信息色
+$text-remark: #7D8699;
+//输入框提示文字颜色
+$text-placeholder: #B2B8C9;
+$text-placeholder2: #919191;
+///*背景、线条色*/
+// 页面背景色、列表标题背景色、置灰按钮背景色
+$background-base: #F0F1F5;
+// 底部背景色
+$background-footer: #3A404D;
+// 按钮、输入框边框颜色
+$border-base: #DADDE6;
+// 分割线颜色
+$background-line: #E5E5E5;
+// 列表内容经过背景色
+$background-list-hover: #EBF1FA;
+// 列表内容背景色
+$background-list: #F6F6F7;
+
+
+/* 2.文字规范 */
+
+// 内容类型 -title -remark -white
+// 字体类型 -normal -large -super
+// 是否加粗 -bold
+
+// 一些普遍场景的样式规整
+@each $colorText, $color in ('-title': $text-title, '-remark': $text-remark, '':$text-content,'-white': #FFFFFF,) {
+  @each $fontSize, $size in ('-normal': 14px, '-large': 16px, '':12px, '-super': 18px,) {
+    @each $fontWeight, $weight in ('-bold': 700, '':400) {
+      .yc-public#{$colorText+$fontSize+$fontWeight} {
+        color: $color;
+        font-size: $size;
+        line-height: $size*1.5;
+        font-weight: $weight;
+      }
+    }
+  }
+}
+
+/* --- end  */
+
+// 系统主色、文字链接色、 按钮背景色
+
+$color-base: #384482;
+// 文字鼠标经过、导航栏选中背景、 蓝色按钮鼠标按下背景色
+$common-base-hover: #43529C;
+
+$color-text-hover: #303a70;
+$color-base-active: #303a70;
+// 导航经过背景色
+$color-base-hover: #399EE6;
+// 蓝色按钮鼠标经过背景色
+$color-btn-hover: #178FFF;
+$color-btn-active: #303a70;
+// 警告、异常、价格色
+$color-alert-error: #EE5547;
+$color-warning-text: #FB8E3C;
+$color-alert-error-hover: #e18275;
+// 通过、成功提示色
+$color-alert-success: #3DBD7D;
+// 标签、普通提示色
+$color-alert-normal: #FAAD14;
+
+
+///* 文字色 */
+// 标题、按钮文字、大部分文字色
+$fontColor-base: #20242E;
+$fontColor-base-1: #428BCA;
+$fontColor-base-2: #337ab7;
+
+// 副标题、次级信息类文字颜色
+$fontColor-subhead: #666666;
+// 辅助信息文字
+$fontColor-help: #999999;
+// 输入框提示文字
+$fontColor-prompt: #bbbbbb;
+// 不可点击色
+$fontColor-disable: #cccccc;
+// 鼠标经过文字色
+$fontColor-hover: #E8EAF1;
+
+///*背景、线条色*/
+// 背景、线条色
+$background: #f5f5f5;
+// 列表标题背景色
+$titleBGC: #eaecef;
+// 列表标题背景色
+$background-title: #EAEAEA;
+// 按钮、输入框、分割线色
+$background-border: #D9D9D9;
+// 列表内容经过背景色、左侧导航经过背景色
+$background-hover: #E6F3FF;
+// antd 边框白色
+$background-antd-border: #FFFFFF;
+
+$input-fontsize: 12px;
+

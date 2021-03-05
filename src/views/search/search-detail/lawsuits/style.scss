@@ -1,0 +1,22 @@
+  .yc-lawsuits-items {
+    position: relative;
+    margin-bottom: 18px;
+    .item {
+      position: relative;
+      display: inline-block;
+    }
+    .close {
+      position: absolute;
+      right: -5px;
+      top: -5px;
+      cursor: pointer;
+    }
+    .add {
+      position: relative;
+      top: 10px;
+      cursor: pointer;
+      width: 16px;
+      height: 16px;
+    }
+  }
+

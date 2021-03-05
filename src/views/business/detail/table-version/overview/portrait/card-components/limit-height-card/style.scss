@@ -1,0 +1,10 @@
+.business-limit-card {
+  padding-bottom: 16px;
+  color: #4E5566;
+  font-size: 12px;
+  &-num {
+    color: $text-title;
+    padding: 0 5px;
+    font-weight: bold;
+  }
+}

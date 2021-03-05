@@ -1,0 +1,230 @@
+@font-face{font-family: "Alibaba PuHuiTi R";src:url('/usr/share/fonts/zh_CN/Alibaba-PuHuiTi-Regular.otf')}
+@font-face{font-family: "Alibaba PuHuiTi M";src:url('/usr/share/fonts/zh_CN/Alibaba-PuHuiTi-Medium.otf')}
+* {
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  color: #20242e;
+  font-size: 13px;
+  list-style: none;
+  font-family: "Alibaba PuHuiTi R", Arial, serif;
+}
+body {
+  padding: 2px;
+  background: #ffffff url("../../img/watermark.png") repeat-y center top;
+  background-size: 85%;
+}
+.name-dishonest{
+  position: relative;
+
+}
+.pl .icon-dishonest{
+  position: absolute;
+  bottom: 2px;
+  right: -32px;
+  width: 45px;
+  height: 33px;
+}
+.po .icon-dishonest{
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  width: 45px;
+  height: 33px;
+}
+.name-dishonest .img-icon-size-dishonest{
+  position: absolute;
+  bottom: 2px;
+  right: -34px;
+  width: 45px;
+  height: 33px;
+}
+
+.name-dishonest .img-icon-size-dishonest-ed{
+  position: absolute;
+  bottom: 2px;
+  right: -34px;
+  width: 45px;
+  height: 33px;
+}
+.img-icon-dishonest{
+  background-image:url("../../img/icon_shixin.png") ;
+  background-size: 100%;
+}
+.img-icon-dishonest-ed{
+  background-image:url("../../img/icon_dishonest_ed.png") ;
+  background-size: 100%;
+}
+span {
+  font-size: inherit; }
+
+a {
+  font-size: inherit; }
+
+.base-b {
+  color: #1C80E1; }
+
+.remark {
+  color: #7d8699; }
+
+.title {
+  color: #20242e; }
+.display-none {
+  display: none; }
+.mg8-0 {margin: 4px 0;}
+
+.mg8 {margin: 8px 0;}
+
+.mg10-0 {margin: 5px 0;}
+
+.mg0-5 {margin: 0 10px;}
+
+.font-m {font-size: 14px;}
+
+.font-l {font-size: 15px;}
+.font-xl {font-size: 16px;}
+.fw-bold {font-weight: bold;}
+.border-t {border-top: 1px solid #E5E5E5; }
+.nAndI {
+  position: relative;
+  display: inline-block; }
+.nAndI .po{
+  position: absolute;
+  top:1px ;
+  z-index: 1; }
+.nAndI span {
+  display: inline-block;
+  vertical-align: middle; }
+
+.nAndI .n-icon {
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  margin-right: 5px;
+  background: #000; }
+.nAndI .n-remark {
+  color: #7d8699; }
+.nAndI .n-title {
+  color: #7d8699; }
+/* 通用样式*/
+
+.firstName{
+  font-size: 30px;
+  line-height: 67px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.exp-info {
+  overflow: hidden;
+  padding: 22px 0 15px 0; }
+.exp-info .n-regStatus{
+  height: 26px;
+  margin-left: 40px;
+  font-size: 12px;
+  padding: 2px 5px;
+}
+.exp-info .default-icon {
+  width: 67px;
+  height: 67px;
+  float: left;
+  margin-left: 4px;
+  background-color: #1e8cfa;
+  border-radius: 5px;
+  border: 1px solid #a8c8ff; }
+.exp-info .default-icon img{
+  width: 100%;
+  border-radius:4px;
+}
+.exp-info .info {
+  margin-left: 85px; }
+
+table {
+  margin-bottom: 15px;
+  border-collapse: collapse;
+  width: 100%; }
+table tr {
+  page-break-before: always;
+  page-break-after: always;
+  page-break-inside: avoid;
+  text-align: left; }
+
+.page-break-style tr{
+  page-break-before: initial!important;
+  page-break-after: initial!important;
+  page-break-inside: initial!important;
+}
+table th {
+  text-align: left; }
+table th, table td {
+  padding: 8px ;
+  vertical-align: middle;
+  border-bottom: 1px solid #E5E5E5; }
+/*table tr td:first-child{*/
+/*  padding-left: 10px;*/
+/*}*/
+/*table tr th:first-child{*/
+/*  padding-left: 10px;*/
+/*}*/
+table th {
+  background-color: #F0F1F5;
+  color: #4e5566; }
+table em {
+  color: #F82626;
+  font-style: normal; }
+.table-border {
+  border: 1px solid #DADDE6; }
+.table-baseInfo tr td:first-child {
+  text-align: right;
+  background: #f0f1f5;
+  width: 200px !important; }
+.table-baseInfo tr td:first-child+td {
+  width: 250px !important; }
+.table-baseInfo tr td:first-child + td + td {
+  text-align: right;
+  background: #f0f1f5;
+  width: 100px !important; }
+.pr{
+  position: relative;
+}
+.accurate-img{
+  height: 30px;
+  width: 30px;
+  top: 1px;
+  left: 0;
+  border: 0;
+  position: absolute;
+  background-image:url("../../img/icon-accurate.png") ;
+  background-size: 30px 30px;
+}
+.entry-title {
+  padding: 15px 0 10px 0; }
+.entry-title .et-cot {
+  border-left: 4px solid #1C80E1;
+  padding-left: 10px; }
+
+.table-1-td-right tr td:first-child{
+  text-align: right;
+}
+.vertical-align-top td{
+  vertical-align: top;
+}
+.list-half li{
+  width: 50%;
+  display: inline-block;
+  margin-top: 0;
+}
+.auctionStatus-error {
+  color: #FB5A5C;
+}
+
+.auctionStatus-1 {
+  color: #FB8E3C;
+}
+.auctionStatus-3 {
+  color: #4267cb;
+}
+.auctionStatus-5 {
+  color: #3DBD7D;
+}

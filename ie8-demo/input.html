@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
+<script src="https://github.com/carlcarl/AjaxFileUpload/blob/master/ajaxfileupload.js"></script>
+
+<body>
+<div>
+	<form id="ajaxForm" enctype="multipart/form-data" action="http://172.18.255.251:8588/yc/business/importExcelText?token=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4MDciLCJzdWIiOiIxNTE2ODI3MTkwMiIsImlhdCI6MTU3NTk4MzY1Mywicm9sZXMiOlsi566h55CG5ZGY55So5oi3Il0sImF1dGhvcml0aWVzIjpbXSwiaG9zdCI6IjE3Mi4xOC4yNTUuMjUxOjgwIiwidXVpZCI6ImI1NDdjNTg3LTMxYjctNDIxMy1iNjMyLTA1ZDZmNDJjNmYxZiIsImV4cGlyZSI6MTU3NjUxMTk5OSwiZXhwIjoxNTc2MjQyODUzfQ.L1CXVK6uXPSnwcJKJiBZmw9Pz9lY6F89Gf35RHhzyWc" method="post">
+		<input type="file" name="file" />
+		<button type="submit">提交</button>
+	</form>
+	<br>
+	<button id="btnButton" type="button">提交......</button>
+	<br>
+	<div>回调展示：<span id="text"></span></div>
+</div>
+<script type="text/javascript">
+	$(function () {
+		$("#btnButton").click(function () {
+			$("#ajaxForm").ajaxFileUpload({
+				type: "post",  //提交方式
+				dataType: "json", //数据类型
+				contentType: false,
+				processData: false,
+				url: "http://172.18.255.251:8588/yc/business/importExcelText?token=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4MDciLCJzdWIiOiIxNTE2ODI3MTkwMiIsImlhdCI6MTU3NTk4MzY1Mywicm9sZXMiOlsi566h55CG5ZGY55So5oi3Il0sImF1dGhvcml0aWVzIjpbXSwiaG9zdCI6IjE3Mi4xOC4yNTUuMjUxOjgwIiwidXVpZCI6ImI1NDdjNTg3LTMxYjctNDIxMy1iNjMyLTA1ZDZmNDJjNmYxZiIsImV4cGlyZSI6MTU3NjUxMTk5OSwiZXhwIjoxNTc2MjQyODUzfQ.L1CXVK6uXPSnwcJKJiBZmw9Pz9lY6F89Gf35RHhzyWc", //请求url
+				success: function (data) { //提交成功的回调函数
+					$("#text").html(JSON.stringify(data));
+
+					// console.log(JSON.stringify(data));
+					// console.log(data);
+				}
+			});
+			return false;
+		});
+	});
+</script>
+
+</body>
+<script>
+	function methods() {
+
+		$('input[type="file"]').ajaxfileupload({
+			action: '/upload.php',
+			valid_extensions : ['md','csv'],
+			onComplete: function(response) {
+				console.log('custom handler for file:');
+				alert(JSON.stringify(response));
+			},
+			onStart: function() {
+				if(weWantedTo) return false; // cancels upload
+			},
+
+
+
+			onCancel: function() {
+				console.log('no file selected');
+			}
+		});
+		$('#temp').ajaxForm(function () {
+			alert("Thank you for your comment!");
+		});
+		// var file = document.getElementById("inputFile").value;
+		// console.log(file);
+		// var formData=new FormData();
+		// formData.append("file",file);
+		$("#temp").ajaxForm({
+			url: "http://172.18.255.251:8588/yc/business/importExcel?token=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4MDciLCJzdWIiOiIxNTE2ODI3MTkwMiIsImlhdCI6MTU3NTk4MzY1Mywicm9sZXMiOlsi566h55CG5ZGY55So5oi3Il0sImF1dGhvcml0aWVzIjpbXSwiaG9zdCI6IjE3Mi4xOC4yNTUuMjUxOjgwIiwidXVpZCI6ImI1NDdjNTg3LTMxYjctNDIxMy1iNjMyLTA1ZDZmNDJjNmYxZiIsImV4cGlyZSI6MTU3NjUxMTk5OSwiZXhwIjoxNTc2MjQyODUzfQ.L1CXVK6uXPSnwcJKJiBZmw9Pz9lY6F89Gf35RHhzyWc",
+			// contentType:"multipart/form-data",
+			contentType: false,
+			processData: false,
+			success: function (data) {
+				console.log("success");
+				console.log(JSON.toString(data));
+			},
+			error: function (er) {
+				console.log("error");
+
+				console.log(er);
+			}
+		});
+	}
+</script>
+</html>

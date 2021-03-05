@@ -1,0 +1,17 @@
+.idea/
+.vscode/
+docs/
+dist/
+node_modules/
+package-lock.json
+yarn.lock
+yarn-error.log
+.DS_Store
+src/assets/旧平台图片库
+src/utils/api/index.js
+jsconfig.json
+/template/src/.sass-cache/
+/template/result/
+/history-ol/
+/history/
+/template/source/

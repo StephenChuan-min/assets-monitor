@@ -1,0 +1,52 @@
+.yc-timeline-title {
+  font-size: 12px;
+  font-weight: bold;
+  color: $text-title;
+}
+.yc-timeline {
+  list-style-type: none;
+  width: 532px;
+  padding-bottom: 30px;
+  &:before {
+    content: "";
+    width: 532px;
+    display: inline-block;
+    height: 1px;
+    border-bottom: 1px dashed #dadde6;
+    position: relative;
+    top: 42px;
+  }
+  .yc-li-complete {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    .yc-timestamp {
+      margin-bottom: 15px;
+      font-size: 12px;
+    }
+    .yc-dotted-line {
+      height: 1px;
+    }
+    .status {
+      position: relative;
+      color: $text-content;
+      transition: all 200ms ease-in;
+      h4 {
+        font-weight: 400;
+        margin-top: 15px;
+        &:before {
+          content: "";
+          width: 10px;
+          height: 10px;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-image: url("../../../../assets/img/icon/icon-time-line.png");
+          position: absolute;
+          top: -19px;
+          left: 45%;
+          transition: all 200ms ease-in;
+        }
+      }
+    }
+  }
+}

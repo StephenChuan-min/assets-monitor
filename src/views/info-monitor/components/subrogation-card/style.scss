@@ -1,0 +1,58 @@
+.risk-subrogation-container {
+  display: inline-block;
+  line-height: 12px;  /*单独给子元素设置行高，覆盖父级元素的行高*/
+  vertical-align: middle;  /*基线居中对齐*/
+
+  &-card {
+    color: #4E5566;
+    font-size: 12px;
+    .card-content-left-arrow {
+      position: relative;
+      background: #FFF9F4;
+      border: 1px solid #FB8E3C;
+      display: inline-block;
+      margin-left: 13px;
+      .card-content-popover-content {
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        color: #FB8E3C;
+        padding-left: 5px;
+        width: 100px;
+      }
+      &:before, &:after {
+        right: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+      &:after {
+        border-color: rgba(255, 249, 244, 0);
+        border-right-color: #FFF9F4;
+        border-width: 5px;
+        margin-top: -5px;
+      }
+      &:before {
+        border-color: rgba(251, 142, 60, 0);
+        border-right-color: $color-warning-text;
+        border-width: 6px;
+        margin-top: -6px;
+      }
+    }
+    &-num {
+      color: $text-title;
+      padding-right: 5px;
+      font-weight: bold;
+    }
+    &-tips{
+      color: $color-warning-text;
+      &-num{
+        margin-right: 4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.yc-more-option-text{
+  span:hover{
+    text-decoration: underline;
+  }
+}
+
+.auction-info{
+  margin-right: 0;
+  padding: 12px 0 12px 0 !important;
+}
+
+.deal-price{
+  color: #3DBD7D !important;
+}
+
+.li-td-tag{
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 2px;
+  margin-right: 7px;
+  text-align: center;
+  color: $text-link;
+  border: 1px solid #77B9F9;
+  background-color: #F0F7FF;
+}
+
+.yellow{
+  color: $common-warning;
+  border: 1px solid #FDB681;
+  background-color: #FDF8F4;
+}
+
+.bule{
+  color: $text-link;
+  border: 1px solid #77B9F9;
+  background-color: #F0F7FF;
+}
+
+.gray{
+  color: $text-remark;
+  border: 1px solid $border-base;
+  background-color: $background-base;
+}
+
+.green{
+  color: $color-alert-success;
+  border: 1px solid #86D8AF;
+  background-color: #F2FFF8;
+}

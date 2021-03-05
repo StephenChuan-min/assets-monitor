@@ -1,0 +1,101 @@
+.yc-header-center {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 3;
+  width: 440px;
+  height: 491px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid $fontColor-hover;
+  border-radius: 0 0 2px 2px;
+  background-color: #fff;
+  color: $fontColor-base;
+  cursor: default;
+  .ant-input-group-addon {
+    width: 60px;
+    background: #fff;
+  }
+  .yc-header-placeholder {
+    position: absolute;
+    top: 113px;
+    z-index: 999;
+    font-size: 12px;
+    left: 29px;
+    color: #b2b8c9;
+  }
+  .yc-search-container {
+    margin: 30px 20px 30px 20px;
+    height: 340px;
+    border: 1px solid #bcc1cc;
+  }
+  .yc-search-icon {
+    position: absolute;
+    right: 38px;
+    top: 115px;
+  }
+  .yc-input-list {
+    list-style: none;
+    border: 1px solid #dadde6;
+    position: absolute;
+    width: 397px;
+    background-color: #fff;
+    padding-left: 0;
+    height: 304px;
+    overflow: auto;
+    z-index: 99;
+    .yc-input-list-item {
+      padding: 6px 8px;
+      font-size: 12px;
+      color: #20242e;
+      cursor: pointer;
+      &:hover {
+        background: #dadde6;
+      }
+    }
+  }
+  .user-panel-msg {
+    height: 74px;
+    background: url("../../../../assets/img/header/img_personal_center.png")
+      no-repeat;
+    padding: 20px;
+    position: relative;
+  }
+  .g-left {
+    float: left;
+    .user-panel-item-text:first-child {
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+    .user-panel-item-text {
+      line-height: 12px;
+      color: #20242e;
+    }
+  }
+  .user-panel-right {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+  .g-right {
+    float: right;
+    font-size: 12px;
+  }
+  .user-panel-login:first-child {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .text-prompt {
+    color: #4e5566;
+  }
+  .user-panel-login {
+    padding-left: 6px;
+    padding-right: 6px;
+    border-left: 1px solid #bcc1cc;
+    cursor: pointer;
+    color: #4d5566;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

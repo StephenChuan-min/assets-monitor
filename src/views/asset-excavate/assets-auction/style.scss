@@ -1,0 +1,119 @@
+// 资产拍卖
+.yc-assets-auction-table-row {
+  vertical-align: top;
+  td {
+    position: relative;
+  }
+}
+.yc-assets-info-img {
+  // width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  border: 0;
+  position: absolute;
+}
+
+.yc-operate-log {
+  color: #20242e;
+  box-sizing: border-box;
+}
+.yc-module {
+  padding: 20px;
+  padding-top: 0;
+  .yc-module-title {
+    color: #20242e;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    line-height: 1;
+    font-weight: bold;
+  }
+  .yc-recovery-text {
+    padding: 0 20px;
+    margin-bottom: 10px;
+    p {
+      font-size: 14px;
+      line-height: 22px;
+      color: #20242e;
+    }
+    .yc-recovery-title {
+      font-size: 14px;
+      line-height: 1;
+      margin-top: 30px;
+      margin-bottom: 16px;
+      padding: 10px 16px;
+      background-color: #3d63bd;
+      color: #fff;
+      border-radius: 17px;
+      display: inline-block;
+    }
+  }
+  &:last-child {
+    padding-bottom: 40px;
+  }
+}
+.yc-history-content {
+  padding-top: 14px;
+  padding-left: 24px;
+  .yc-history-title {
+    height: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    color: $text-title;
+    line-height: 14px;
+    margin-bottom: 16px;
+  }
+  .yc-history-item {
+    margin-bottom: 24px;
+  }
+  .yc-history-label {
+    width: 48px;
+    height: 12px;
+    font-size: 12px;
+    font-weight: 400;
+    color: $text-remark;
+    line-height: 12px;
+  }
+  .yc-Timeline-content {
+    max-height: 600px;
+    overflow: auto;
+    .yc-Timeline-label{
+      margin-bottom: 10px;
+    }
+    .yc-Timeline-item {
+      margin-bottom: 10px;
+
+      .yc-item-label {
+        display: inline-block;
+        width: 140px;
+      }
+    }
+    .TimelineName {
+      font-size: 12px;
+      font-weight: 400;
+      color: $text-title;
+      padding-top: 1px;
+    }
+    .TimelineUrl {
+      font-size: 12px;
+      font-weight: 400;
+      color: $text-link;
+      cursor: pointer;
+    }
+  }
+}
+
+.auction-history-btn span{
+  line-height: 18px;
+}
+
+.under-line{
+  span:hover{
+    text-decoration: underline;
+  }
+}
+.yc-more-option-text{
+  span:hover{
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,63 @@
+.yc-tag-active {
+  display: inline-block;
+  font-size: 0;
+  position: relative;
+  z-index: 9;
+
+  .yc-label-tag-content {
+    //width: 140px;
+    margin-right: 12px;
+    display: inline-block;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 24px 0 24px;
+    border: 1px solid #FB8E3C;
+    color: #FB8E3C;
+  }
+}
+
+.yc-label-tag {
+  display: inline-block;
+  font-size: 0;
+  //position: relative;
+  z-index: 1;
+  &:hover {
+    .yc-label-tag-content {
+      position: relative;
+      cursor: pointer;
+      border: 1px solid #FB8E3C;
+      color: #FB8E3C;
+    }
+  }
+  .yc-label-tag-content {
+    //width: 140px;
+    margin-right: 12px;
+    display: inline-block;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid $border-base;
+    padding: 0 24px 0 24px;
+    color: $text-title;
+  }
+}
+
+.yc-label-disabled {
+  cursor: not-allowed;
+  //pointer-events: none;
+  display: inline-block;
+  //position: relative;
+  .yc-label-tag-content {
+    margin-right: 12px;
+    cursor: not-allowed;
+    display: inline-block;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 24px;
+    border: 1px solid $border-base;
+    background-color: $background-base;
+    color:$text-remark;
+  }
+}

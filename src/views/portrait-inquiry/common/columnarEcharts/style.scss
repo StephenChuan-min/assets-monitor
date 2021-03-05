@@ -1,0 +1,21 @@
+.yc-columnar-echarts {
+  display: inline-block;
+  //pointer-events: none;
+}
+.yc-columnar-title {
+  font-size: 12px;
+  font-weight: bold;
+  color: $text-title;
+}
+.yc-position{
+  position: relative;
+  .yc-p-span {
+    position: absolute;
+    z-index: 1;
+    font-size:12px;
+    color: #ffffff;
+  }
+  .echarts-tooltip{
+    z-index: 3;
+  }
+}

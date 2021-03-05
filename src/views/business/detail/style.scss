@@ -1,0 +1,445 @@
+/* 详情页「新」2020.02.19 */
+.yc-information-detail-wrapper {
+  //border-bottom: 1px solid #f0f1f5;
+  .ant-table-tbody>tr>td, .ant-table-thead>tr {
+    border-bottom: 1px solid #E5E5E5;
+  }
+  .ant-table-tbody>tr>td, .ant-table-thead>tr>th {
+    padding: 12px 20px;
+    color: $text-title;
+  }
+  .ant-table-body tbody tr:nth-child(2n), .cTableContent tbody tr:nth-child(2n) {
+    background: #ffffff;
+  }
+  .ant-table-body tbody tr:nth-child(2n):hover, .cTableContent tbody tr:nth-child(2n):hover {
+    background: #ebf1fa;
+  }
+
+  .intro-download {
+    position: absolute;
+    right: 20px;
+    top: 11px;
+    bottom:0;
+    //z-index: 3;
+    span {
+      line-height: 22px;
+    }
+    &-button{
+      min-width: 84px;
+      height: 30px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    i {
+      margin-right: 4px;
+    }
+  }
+  .info-detail{
+    padding-bottom: 0!important;
+    .debtor-visualize-overview-line {
+      height: 10px;
+      width: 100%;
+      background: #f2f2f2
+    }
+    .inquiry-list-regStatus{
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      font-size: 12px;
+      line-height: 18px;
+      padding: 0 10px;
+      margin-left: 10px;
+      font-weight: normal;
+      border: 1px solid $border-base;
+    }
+    .regStatus-green{
+      border: 1px solid #94D6B5;
+      background-color: #F4FFF9;
+      color: $common-success;
+    }
+    .regStatus-blue{
+      border: 1px solid #77B9F9;
+      background-color: #F0F7FF;
+      color: #1C80E1;
+    }
+    .regStatus-red{
+      border: 1px solid #FF9293;
+      background-color: #FFF3F3;
+      color: $common-error;
+    }
+    .regStatus-orange{
+      border: 1px solid $common-warning;
+      background-color: #fef9f3;
+      color: $common-warning;
+    }
+  }
+  .info-content{
+    //.inquiry-assets{
+    //  padding: 10px 0 0;
+    //}
+    .info-assets-padding{
+      padding: 0 20px 20px 20px;
+    }
+  }
+
+  .yc-inquiry-public-table{
+    .yc-tabs-suffix-dishonest{
+      float: right;
+      height: 37px;
+      line-height: 37px;
+      .dishonest-spin{
+        width:120px;
+        display: inline-block;
+      }
+      .dishonest-count{
+        display: inline-block;
+        padding: 0 10px;
+        span{
+          font-size: 12px;
+          margin-left: 15px;
+        }
+      }
+    }
+    .yc-tabs-suffix-ignore{
+      .ant-switch{
+        height: 18px;
+        width: 40px;
+        line-height: 16px;
+        border-radius: 2px;
+        border: 1px solid $border-base;
+        .ant-switch-inner{
+          left: 21px;
+        }
+        &:after{
+          height: 14px;
+          width: 14px;
+          left: 1px;
+          border-radius: 2px;
+        }
+      }
+      .ant-switch-checked{
+        &:after{
+          left: 23px;
+          color: $text-remark;
+        }
+      }
+      .ant-switch-checked .ant-switch-inner {
+        left: 5px;
+        color: $background-base;
+      }
+      .ignore-text{
+        @extend .yc-public-remark;
+        margin-right: 6px;
+        color: $text-content;
+      }
+      margin-left: 25px;
+      display: inline-block;
+    }
+    .yc-tabs-simple-prefix{
+      @extend .yc-public-normal-bold;
+      min-width:90px;
+      width: auto;
+      line-height: 14px;
+      border-right: 1px solid $border-base;
+      border-left: 3px solid $text-link;
+      margin: 12px 15px 12px 0;
+      padding-right: 20px;
+      padding-left: 7px;
+      float: left;
+    }
+    .inquiry-public-table{
+      padding-top: 5px;
+    }
+  }
+  .yc-table-pagination{
+    padding-bottom: 10px;
+  }
+  .yc-assets-auction .assets-info-content li .list-title {
+    width:auto;
+  }
+
+  .info-wrapper {
+    padding: 20px;
+    background-color: #FFFFFF;
+  }
+
+  .mark-line {
+    height: 1px;
+    width: 100%;
+    background-color: #E5E5E5;
+  }
+
+  .enterprise-info {
+    padding: 5px 0 20px 0;
+    border-bottom: 1px solid $border-base;
+    position: relative;
+
+    .intro-icon {
+      width: 80px;
+      height: 80px;
+      float: left;
+      background-color: #1E8CFA;
+      padding: 10px;
+      font-size: 24px;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 5px;
+      color: #FFFFFF;
+      position: relative;
+      .intro-icon-img-auto{
+        overflow: hidden;
+        background-color: #FFFFFF;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: 0;
+        top: 0;
+        border-radius: 4px;
+      }
+      .intro-icon-img-w {
+        overflow: hidden;
+        background-color: #FFFFFF;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: 0;
+        top: 0;
+        line-height: 70px;
+        border: 1px solid #1E8CFA;
+        border-radius: 4px;
+
+        .intro-icon-img {
+          vertical-align: middle;
+          width: 100%;
+          border-radius: 4px;
+        }
+      }
+
+    }
+
+    .intro-content {
+      margin-left: 96px;
+      .intro-base-info, .intro-used {
+        margin-top: 7px;
+      }
+
+    }
+    .intro-icon-per{
+      height: 60px;
+      width: 60px;
+      overflow: hidden;
+      .intro-icon-img-auto{
+        width: 60px;
+        height: 60px;
+      }
+      .intro-content{
+        margin-left: 75px;
+      }
+    }
+    .intro-title {
+
+      span {
+        display: inline-block;
+      }
+
+      .intro-title-name {
+        font-size: 17px;
+        position: relative;
+        margin-right: 10px;
+
+        .intro-title-tag {
+          position: absolute;
+          //right: 0;
+          bottom: 5px;
+        }
+      }
+
+      .intro-title-status {
+        width: 44px;
+        height: 20px;
+        text-align: center;
+        color: $common-success;
+        border: 1px solid $common-success;
+        line-height: 18px;
+      }
+    }
+
+
+  }
+
+  .enterprise-info-simple{
+    padding-bottom: 5px;
+  }
+  .enterprise-info{
+    border-bottom:none;
+    .yc-intro-sub-items{
+      border-bottom:none;
+    }
+  }
+
+  .enterprise-info__simple{
+    padding-bottom: 5px;
+    .intro-content{
+      margin-left: 0;
+    }
+    .intro-icon,.intro-used{
+      display: none;
+    }
+  }
+
+  .yc-intro-sub-items{
+    padding: 16px 0 15px 0;
+    // border-bottom: 1px solid $border-base;
+    .intro-btn-items{
+      margin-right: 16px;
+      margin-bottom: 10px;
+      min-width: 92px;
+    }
+    .yc-intro-btn-items {
+      margin-left: -1px;
+      min-width: 100px;
+      height: 30px;
+      border-radius:2px 0 0 2px;
+    }
+  }
+  .intro-list-border {
+    line-height: 1;
+    padding-right: 12px;
+    border-right: 1px solid $border-base;
+  }
+
+  .intro-info-list {
+    display: inline-block;
+    margin-right: 10px;
+
+  }
+  .public-table-tab {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid $border-base;
+    .yc-tabs-simple-prefix {
+      border-right: none !important;
+      min-width: 110px;
+      .yc-table-num {
+        color: $text-link;
+        margin-left: 4px;
+      }
+    }
+  }
+  .enterprise-intro {
+    background-color: #fff;
+    padding: 20px 20px 0 20px;
+    transition: all 0.5s;
+    .enterprise-info {
+      padding: 5px 0 20px 0;
+      border-bottom: 1px solid $border-base;
+      position: relative;
+      .intro-icon {
+        width: 80px;
+        height: 80px;
+        float: left;
+        background-color: #1E8CFA;
+        padding: 10px;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 5px;
+        color: #FFFFFF;
+        position: relative;
+        .intro-icon-img-w {
+          overflow: hidden;
+          background-color: #FFFFFF;
+          position: absolute;
+          width: 80px;
+          height: 80px;
+          left: 0;
+          top: 0;
+          line-height: 70px;
+          border: 1px solid #1E8CFA;
+          border-radius: 4px;
+          .intro-icon-img {
+            vertical-align: middle;
+            width: 100%;
+            border-radius: 4px;
+          }
+        }
+
+      }
+      .intro-content {
+        margin-left: 96px;
+
+        .intro-base-info, .intro-used {
+          margin-top: 7px;
+        }
+
+      }
+      .intro-title {
+
+        span {
+          display: inline-block;
+        }
+
+        .intro-title-name {
+          font-size: 17px;
+          position: relative;
+          //margin-right: 10px;
+
+          .intro-title-tag {
+            position: absolute;
+            //right: -10px;
+
+            bottom: 0;
+          }
+        }
+
+        .intro-title-status {
+          width: 44px;
+          height: 20px;
+          text-align: center;
+          color: $common-success;
+          border: 1px solid $common-success;
+          line-height: 18px;
+        }
+      }
+    }
+
+    .intro-list-border{
+      line-height: 1;
+      padding-right: 10px;
+      border-right:1px solid $border-base;
+    }
+    .intro-info-list {
+      display: inline-block;
+      margin-right: 10px;
+
+    }
+  }
+  .enterprise-intro{
+    border-bottom:none;
+    .yc-intro-sub-items{
+      border-bottom:none;
+    }
+  }
+
+  .enterprise-intro-child{
+    .yc-tabs-simple {
+      border-bottom: 1px solid $border-base !important;
+    }
+  }
+  .enterprise-intro-affix {
+    .yc-intro-sub-items{
+      border-bottom:1px solid $border-base !important;
+    }
+
+  }
+
+  .public-table-tab {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid $border-base;
+
+    .yc-tabs-simple-prefix {
+      border-right: none !important;
+    }
+  }
+}

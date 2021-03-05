@@ -1,0 +1,44 @@
+/* 基本公共样式 */
+@import "./public.scss";
+/* 查询+展示的公用样式 */
+@import "./module.scss";
+/* 覆盖 antd 样式 */
+@import "./antd.scss";
+
+
+
+/* 修改默认基本样式 */
+input::-webkit-input-placeholder {
+  color: $text-placeholder;
+  opacity: 1;
+}
+
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: $text-placeholder!important;
+}
+
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: $text-placeholder!important;
+}
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $text-placeholder!important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.yc-input-placeholder {
+  color: $text-placeholder !important;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+hr {
+  margin: 10px 0;
+}

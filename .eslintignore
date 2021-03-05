@@ -1,0 +1,7 @@
+node_modules/
+docs/
+template/
+export-task/
+patchs/*
+scripts/*
+src/static

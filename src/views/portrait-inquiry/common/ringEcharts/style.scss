@@ -1,0 +1,22 @@
+.yc-ring-echarts {
+    display: inline-block;
+  }
+  .yc-ring-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: $text-title;
+  }
+  .yc-ring-description {
+    font-size: 12px;
+    display: inline-block;
+    .yc-ring-item {
+      margin-bottom: 16px;
+      .ring-item-name {
+        width: 48px;
+        display: inline-block;
+      }
+      .ring-item-num {
+        margin-left: 12px;
+      }
+    }
+  }

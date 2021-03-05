@@ -1,0 +1,15 @@
+.yc-badge{
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+  .yc-badge-tab{
+    position: absolute;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    top: -4px;
+    //border-radius: 50%;
+    //background: red;
+  }
+}

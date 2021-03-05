@@ -1,0 +1,113 @@
+.yc-header-message {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 3;
+  width: 400px;
+  height: 441px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid $fontColor-hover;
+  border-radius: 0 0 2px 2px;
+  background-color: #FFFFFF;
+  color: $fontColor-base;
+  font-size: 12px;
+  line-height: 24px;
+  cursor: default;
+  .yc-station-box {
+    padding: 16px 20px;
+    font-size: 14px;
+    line-height: 14px;
+    border-bottom: 1px solid $background-line;
+  }
+  .yc-station-btn {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #1C80E1;
+    font-size: 12px;
+    text-align: right;
+    background-color: #FFFFFF;
+    outline: none;
+    float: right;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .yc-station-list {
+    height: 347px;
+    overflow: auto;
+    border-bottom: 1px solid $background-line;
+
+    .notice-station-wrapper {
+      padding-top: 130px;
+      text-align: center;
+      color: #bcc1cc;
+      line-height: 30px;
+      .notice-station-img {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: url("../../../../assets/img/inform/img_blank_news.png");
+      }
+    }
+    .yc-station-item {
+      padding: 16px 20px;
+      border-bottom: 1px solid $background-line;
+      font-size: 12px;
+      position: relative;
+      display: block;
+      text-decoration: none;
+      overflow: hidden;
+      &:last-child {
+        border-bottom: 0;
+      }
+      &:hover {
+        background: $background-list-hover;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+    .yc-station-item-title {
+      font-size: 14px;
+      margin-bottom: 12px;
+      line-height: 1;
+      color: #20242e;
+      .yc-station-item-brief {
+        float: right;
+        font-size: 12px;
+        color: #7d8699;
+        line-height: 1;
+      }
+      .yc-station-item-content {
+        font-size: 12px;
+        color: #4e5566;
+        line-height: 20px;
+        height: 40px;
+        display: block;
+        overflow: hidden;
+      }
+    }
+    .yc-station-item-content{
+      color: #4E5566;
+      em {
+        font-weight: bold;
+        font-style: normal;
+      }
+    }
+  }
+  .yc-station-box-center {
+    padding: 16px 20px;
+    font-size: 14px;
+    line-height: 14px;
+    border-bottom: 1px solid $background-line;
+    text-align: center;
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

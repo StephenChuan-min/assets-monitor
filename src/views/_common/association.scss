@@ -1,0 +1,39 @@
+.yc-modal-association-link{
+  .source-list-hr{
+    height: 1px;
+    margin: 10px 0;
+    background-color: #e9e9e9;
+  }
+  .source-list-title{
+    margin: 10px 0 5px 5px;
+  }
+  .source-list-data{
+    font-size: 12px;
+    margin: 4px ;
+    .list-title{
+      display: inline-block;
+      width: 100px;
+    }
+    .list-content{
+      width: 500px;
+    }
+  }
+
+  .tips{
+    color: #4E5566;
+    font-size: 12px;
+    margin-bottom: 20px;
+    span{
+      font-size: 16px;
+      color: #20242e;
+      font-weight: bold;
+      margin: 0 4px;
+    }
+  }
+
+  .linkPic{
+    width: 12px;
+    height: 12px;
+  }
+}
+

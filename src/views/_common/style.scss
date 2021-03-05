@@ -1,0 +1,102 @@
+
+.yc-party-info-list {
+  white-space: nowrap;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  margin-bottom: 5px;
+
+  .party-info {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .party-info-title {
+    color: $text-remark;
+
+    .li-role {
+      text-align: justify;
+      text-justify: distribute-all-lines;
+      text-align-last: justify;
+    }
+  }
+
+  .party-info-type-0 {
+    width: 40px;
+  }
+
+  .party-info-type-1,
+  .party-info-type-2,
+  .party-info-type-3,
+  .party-info-type-4 {
+    width: 80px;
+  }
+
+  .party-info-content {
+    position: relative;
+    white-space: normal;
+    li {
+      max-width: 140px;
+    }
+
+    .party-info-status {
+      position: absolute;
+      bottom: 0;
+      right: -5px;
+      height: 18px;
+      width: auto;
+      text-align: left;
+      cursor: pointer;
+      color: $text-link;
+
+      &:hover {
+        color: $text-link-hover;
+        text-decoration: underline;
+      }
+
+      &:active {
+        color: $text-link-hover;
+      }
+
+      i {
+        font-size: 10px;
+        padding-top: 5px;
+        vertical-align: top;
+        margin-left: 3px;
+      }
+    }
+  }
+}
+.yc-party-crosswise{
+  line-height: 20px;
+  .detail-style{
+    line-height: 20px;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  .yc-split-line-info{
+    height: 16px;
+    margin: 0 10px 0 0;
+  }
+  .yc-party-info-crosswise {
+    width: 270px;
+    display: inline-block;
+    margin-bottom: 0;
+
+    .party-info-content{
+      padding-right: 10px;
+    }
+    .party-info-content li{
+      padding-bottom: 0;
+    }
+    .party-info-status-wait{
+      position: absolute;
+      top: 0;
+      right: -13px;
+      height: 16px;
+      width: auto;
+      text-align: center;
+    }
+  }
+}
+

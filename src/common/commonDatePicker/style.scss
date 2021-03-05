@@ -1,0 +1,23 @@
+.yc-datePicker-none {
+  display: none !important;
+}
+.yc-datePicker-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+  .yc-datePicker-placeholder {
+    position: absolute;
+    width: 100px;
+    font-size: 12px;
+    right: 32px;
+    top: 8px;
+    color: $text-placeholder;
+  }
+  &:hover {
+    .ant-input {
+      border-color: $text-link;
+    }
+  }
+}
+

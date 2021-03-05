@@ -1,0 +1,37 @@
+.custom-modal{
+  .ant-modal-header{
+    border-bottom: none;
+    padding: 34px 0 0 24px;
+  }
+
+  .ant-modal-body{
+    padding: 0 16px 16px 16px;
+  }
+  .custom-content{
+    padding: 6px 0 0 46px;
+    &-text{
+      margin: 6px 0;
+      font-size: 14px;
+      color: $text-content;
+    }
+  }
+
+  .title-name{
+    height: 24px;
+    line-height: 24px;
+    .title-icon{
+      color: #FB8E3C;
+      font-weight: 100;
+      font-size: 24px;
+      margin-right: 14px;
+      height: 24px;
+      line-height: 24px;
+      vertical-align: middle;
+    }
+  }
+}
+
+.custom-btn{
+  text-align: center;
+  margin: 30px 0 10px 0;
+}

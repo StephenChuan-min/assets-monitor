@@ -1,0 +1,23 @@
+.container{
+  display: flex;
+  justify-content: center;
+  .basic{
+    border:1px solid #ddd;
+  }
+  .node circle {
+    cursor: pointer;
+    fill: steelblue;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+
+  .node text {
+    font: 16px sans-serif;
+  }
+
+  path.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+  }
+}

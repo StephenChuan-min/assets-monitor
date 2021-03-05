@@ -1,0 +1,30 @@
+.business-broken-container {
+  display: inline-block;
+  line-height: 12px;  /*单独给子元素设置行高，覆盖父级元素的行高*/
+  vertical-align: middle;  /*基线居中对齐*/
+  width: 100%;
+  padding-top: 16px;
+  .card-content-role-line {
+    width:1px;
+    height:46px;
+    background:#F0F0F0;
+    border-radius:2px;
+  }
+  &-card {
+    color: #4E5566;
+    font-size: 12px;
+    padding-bottom: 16px;
+    &-num {
+      color: $text-title;
+      padding-right: 5px;
+      font-weight: bold;
+    }
+    .typeName {
+      display: inline-block;
+      width: 40px;
+      text-align: justify;
+      text-justify: distribute-all-lines;
+      text-align-last: justify;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.yc-table-content {
+  display: inline-block;
+  min-width: 210px!important;
+  .list-title {
+    color: #7d8699;
+    width: 65px;
+    text-align: justify;
+    text-align-last: justify;
+  }
+  .list-title-colon {
+    color: #7d8699;
+    width: 12px;
+    margin-left: 2px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+.yc-table-line {
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: $border-base;
+  margin-left: 12px;
+  margin-right: 12px;
+  position: relative;
+  top: 2px;
+}

@@ -1,0 +1,23 @@
+.yc-bread-crumb{
+  padding: 20px;
+  background-color: #fff;
+  line-height: 1;
+  position: relative;
+  .bread-crumb-delimiter{
+    margin: 0 10px;
+    font-size: inherit;
+  }
+  .crumb-last{
+    color:$text-title;
+  }
+  .crumb-link{
+    color: $text-remark;
+    &:hover{
+      color: $text-link;
+      text-decoration: underline;
+    }
+  }
+  .crumb-normal{
+    color: $text-remark;
+  }
+}

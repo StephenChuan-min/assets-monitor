@@ -1,0 +1,9 @@
+.test-wrapper{
+   padding: 50px;
+   background-color: #fff;
+   .test{
+      &-title{
+         margin-bottom: 20px;
+      }
+   }
+}

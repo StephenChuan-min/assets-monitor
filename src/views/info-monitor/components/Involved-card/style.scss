@@ -1,0 +1,9 @@
+.risk-lawsuit-card {
+  color: #4E5566;
+  font-size: 12px;
+  &-num {
+    color: $text-title;
+    padding-right: 5px;
+    font-weight: bold;
+  }
+}

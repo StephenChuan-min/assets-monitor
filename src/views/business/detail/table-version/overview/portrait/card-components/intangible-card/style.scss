@@ -1,0 +1,25 @@
+.business-intangible-container {
+  display: inline-block;
+  line-height: 12px;  /*单独给子元素设置行高，覆盖父级元素的行高*/
+  vertical-align: middle;  /*基线居中对齐*/
+  width: 100%;
+  padding-top: 16px;
+  &-card {
+    color: #4E5566;
+    font-size: 12px;
+    padding-bottom: 16px;
+    &-name {
+      display: inline-block;
+      width: 60px;
+      text-align: justify;
+      text-justify: distribute-all-lines;
+      text-align-last: justify;
+    }
+    &-num {
+      color: $text-title;
+      padding-right: 5px;
+      font-weight: bold;
+
+    }
+  }
+}

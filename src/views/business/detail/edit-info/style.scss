@@ -1,0 +1,103 @@
+
+.edit-info-wrapper{
+  .ant-table-tbody>tr>td {
+    border-bottom: 1px solid #E5E5E5;
+  }
+  .ant-table-tbody>tr>td, .ant-table-thead>tr>th {
+    padding: 12px 20px;
+  }
+  .info-wrapper{
+    padding: 20px;
+    .info-edit-title {
+      font-size: 14px;
+      color: $text-title;
+      height: 16px;
+      line-height: 16px;
+      .info-edit-left-item {
+        width: 3px;
+        height: 16px;
+        background: $text-link;
+        display: inline-block;
+        margin-right: 7px;
+      }
+      .info-edit-title-name {
+        display: inline-block;
+        height: 14px;
+        line-height: 14px;
+        position: relative;
+        bottom: 3px;
+        font-weight: bold;
+      }
+    }
+    .yc-from-container {
+      width: 500px;
+      display: inline-block;
+      margin-top: 20px;
+      .yc-from-label1 {
+        font-size: 12px;
+        display: inline-block;
+        color: $text-title;
+        width: 80px;
+        text-align: right;
+      }
+      .yc-from-label2 {
+        font-size: 12px;
+        display: inline-block;
+        color: $text-title;
+        width: 180px;
+        text-align: right;
+        .yc-red {
+          display: inline-block;
+          width: 10px;
+          color: #f66c5b;
+          vertical-align: bottom;
+        }
+      }
+      .yc-from-input {
+        width: 300px;
+        height: 34px;
+        line-height: 34px;
+      }
+    }
+    .yc-table-addList {
+      margin-top: 18px;
+      width: 1160px;
+      height: 34px;
+      line-height: 32px;
+      text-align: center;
+      font-size: 14px;
+      border-radius: 2px;
+      border: 1px dashed #DADDE6;
+      cursor: pointer;
+      &:hover {
+        border: 1px dashed $text-link;
+        color: $text-link;
+      }
+      .yc-table-addList-img {
+        margin-right: 6px;
+        width: 14px;
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+  .info-navigation{
+    &-suffix{
+      position: absolute;
+      right: 0;
+      top: -7px;
+      bottom:0;
+      z-index: 3;
+      &__button{
+        width: 70px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .mark-line {
+    height: 1px;
+    width: 100%;
+    background-color: #E5E5E5;
+  }
+}
+

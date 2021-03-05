@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<style>
+		___style___
+	</style>
+	<meta charset="UTF-8">
+	<title>债务人画像查询报告</title>
+</head>
+<body>
+<!-- 基本信息 -->
+<div class="exp-info border-b">
+	<div class="icon">
+		{info.logoUrl}
+	</div>
+	<div class="info">
+		<li class="font-l">
+			<span class="n-title name-dishonest">
+				{info.name}
+				{info.dishonest}
+			</span>
+			{info.regStatus}
+		</li>
+		<li class="mg8-0">
+			<div class="nAndI">
+				<span class="n-title">法定代表人：</span>
+				<span class="n-desc">{info.legalPersonName}</span>
+			</div>
+			<div class="n-line mg0-5"></div>
+			<div class="nAndI ">
+				<span class="n-title">注册资本：</span>
+				<span class="n-desc">{info.regCapital}</span>
+			</div>
+			<div class="n-line mg0-5"></div>
+			<div class="nAndI ">
+				<span class="n-title">成立日期：</span>
+				<span class="n-desc">{info.establishTime}</span>
+			</div>
+		</li>
+		<li class="{info.formerNames.display}">
+			<div class="nAndI">
+				<span class="n-title">曾用名：</span>
+				<span class="n-desc">{info.formerNames}</span>
+			</div>
+		</li>
+	</div>
+</div>
+
+<!-- 概览模块 -->
+
+<!-- 概览-资产概况 -- start -->
+<div class="{overview.asset.display}">
+	<div class="entry-title border-b">
+		<div class="fw-bold font-xl">资产概况</div>
+	</div>
+
+	<!-- 资产拍卖 精准匹配 -->
+	<div class="padding6 {overview.A10201.accurate.display}">
+		<div class="entry-title ">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10201.accurate.total}条</span>
+				<span>资产拍卖 - 精准匹配</span>
+			</div>
+		</div>
+		<div class="{overview.A10201.accurate.role.display}">
+			<div class="fw-bold second-title">角色分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10201.accurate.role.list}
+			</table>
+		</div>
+		<div class="{overview.A10201.accurate.result.display}">
+			<div class="fw-bold second-title">拍卖结果分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10201.accurate.result.list}
+			</table>
+		</div>
+	</div>
+	<!-- 资产拍卖 模糊匹配 -->
+	<div class="padding6 {overview.A10201.blurry.display}">
+		<div class="entry-title ">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10201.blurry.total}条</span>
+				<span>资产拍卖 - 模糊匹配</span>
+			</div>
+		</div>
+		<div class="{overview.A10201.blurry.role.display}">
+			<div class="fw-bold second-title">角色分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10201.blurry.role.list}
+			</table>
+		</div>
+		<div class="{overview.A10201.blurry.result.display}">
+			<div class="fw-bold second-title">拍卖结果分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10201.blurry.result.list}
+			</table>
+		</div>
+	</div>
+
+	<!-- 土地信息 -->
+	<div class="padding6 {overview.A10203.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10203.total}条</span>
+				<span>土地信息</span>
+			</div>
+		</div>
+		<div class="{overview.A10203.type.display}">
+			<div class="fw-bold second-title">信息类型分布</div>
+			<table class="table-td-25 table-border mg8-0">
+				{overview.A10203.type.list}
+			</table>
+		</div>
+		<div class="{overview.A10203.year.display}">
+			<div class="fw-bold second-title">年份分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10203.year.list}
+			</table>
+		</div>
+		<div class="{overview.A10203.role.display}">
+			<div class="fw-bold second-title">角色分布</div>
+			<table class="table-td-25 table-border mg8-0">
+				{overview.A10203.role.list}
+			</table>
+		</div>
+	</div>
+
+	<!-- 无形资产-->
+	<div class="padding6 {overview.A10210.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10210.total}条</span>
+				<span>无形资产</span>
+			</div>
+		</div>
+		<table class="table-td-25 table-border mg8-0">
+			{overview.A10210.list}
+		</table>
+	</div>
+
+	<!-- 代位权信息 -->
+	<div class="padding6 {overview.A10202.trial.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10202.trial.total}条</span>
+				<span>代位权 - 立案信息</span>
+			</div>
+		</div>
+
+		<div class="{overview.A10202.trial.year}">
+			<div class="fw-bold second-title">年份分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10202.trial.year.list}
+			</table>
+		</div>
+		<div class="{overview.A10202.trial.case}">
+			<div class="fw-bold second-title">案件类型分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10202.trial.case.list}
+			</table>
+		</div>
+	</div>
+	<div class="padding6 {overview.A10202.court.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10202.court.total}条</span>
+				<span>代位权 - 开庭信息</span>
+			</div>
+		</div>
+		<div class="{overview.A10202.court.year}">
+			<div class="fw-bold second-title">年份分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10202.court.year.list}
+			</table>
+		</div>
+		<div class="{overview.A10202.court.reason}">
+			<div class="fw-bold second-title">案由分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10202.court.reason.list}
+			</table>
+		</div>
+
+	</div>
+	<div class="padding6 {overview.A10202.judgment.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10202.judgment.total}条</span>
+				<span>代位权 - 裁判文书</span>
+			</div>
+			<div class="{overview.A10202.judgment.year}">
+				<div class="fw-bold second-title">年份分布</div>
+				<table class="table-td-20 table-border mg8-0">
+					{overview.A10202.judgment.year.list}
+				</table>
+			</div>
+			<div class="{overview.A10202.judgment.reason}">
+				<div class="fw-bold second-title">案由分布</div>
+				<table class="table-td-20 table-border mg8-0">
+					{overview.A10202.judgment.reason.list}
+				</table>
+			</div>
+			<div class="{overview.A10202.judgment.case}">
+				<div class="fw-bold second-title">案件类型分布</div>
+				<table class="table-td-25 table-border mg8-0">
+					{overview.A10202.judgment.case.list}
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<!-- 股权质押 -->
+	<div class="padding6 {overview.A10204.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10204.total}条</span>
+				<span>股权质押信息</span>
+			</div>
+		</div>
+		<div class="{overview.A10204.year.display}">
+			<div class="fw-bold second-title">年份分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10204.year.list}
+			</table>
+		</div>
+		<div class="{overview.A10204.role.display}">
+			<div class="fw-bold second-title">角色分布</div>
+			<table class="table-td-50 table-border mg8-0">
+				{overview.A10204.role.list}
+			</table>
+		</div>
+	</div>
+
+	<!-- 动产抵押 -->
+	<div class="padding6 {overview.A10205.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10205.total}条</span>
+				<span>动产抵押信息</span>
+			</div>
+		</div>
+		<div class="{overview.A10205.year.display}">
+			<div class="fw-bold second-title">年份分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10205.year.list}
+			</table>
+		</div>
+		<div class="{overview.A10205.role.display}">
+			<div class="fw-bold second-title">角色分布</div>
+			<table class="table-td-50 table-border mg8-0">
+				{overview.A10205.role.list}
+			</table>
+		</div>
+	</div>
+
+	<!-- 查解封资产 -->
+	<div class="padding6 {overview.A10212.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10212.total}条</span>
+				<span>查/解封资产</span>
+			</div>
+		</div>
+		<div class="{overview.A10212.year.display}">
+			<div class="fw-bold second-title">年份分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10212.year.list}
+			</table>
+		</div>
+	</div>
+
+	<!-- 在建工程 - 建设单位 -->
+	<div class="padding6 {overview.A10218.construct.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10218.construct.total}条</span>
+				<span>在建工程 - 建设单位</span>
+			</div>
+		</div>
+		<div class="{overview.A10218.construct.projectInfoTypeVoList}">
+			<div class="fw-bold second-title">项目状态分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10218.construct.projectInfoTypeVoList.list}
+			</table>
+		</div>
+<!--		<div class="{overview.A10218.construct.year}">-->
+<!--			<div class="fw-bold second-title">年份分布</div>-->
+<!--			<table class="table-td-20 table-border mg8-0">-->
+<!--				{overview.A10218.construct.year.list}-->
+<!--			</table>-->
+<!--		</div>-->
+	</div>
+	<!-- 在建工程 - 中标单位 -->
+	<div class="padding6 {overview.A10218.winbid.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10218.winbid.total}条</span>
+				<span>在建工程 - 中标单位</span>
+			</div>
+		</div>
+		<div class="{overview.A10218.winbid.year}">
+			<div class="fw-bold second-title">年份分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10218.winbid.year.list}
+			</table>
+		</div>
+	</div>
+	<!-- 在建工程 - 施工单位 -->
+	<div class="padding6 {overview.A10218.underway.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10218.underway.total}条</span>
+				<span>在建工程 - 施工单位</span>
+			</div>
+		</div>
+		<div class="{overview.A10218.underway.year}">
+			<div class="fw-bold second-title">年份分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10218.underway.year.list}
+			</table>
+		</div>
+	</div>
+
+	<!-- 不动产登记 精准匹配 -->
+	<div class="padding6 {overview.A10215.display}">
+		<div class="entry-title ">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10215.total}条</span>
+				<span>不动产登记 - 精准匹配</span>
+			</div>
+		</div>
+		<div class="{overview.A10215.year.display}">
+			<div class="fw-bold second-title">年份分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10215.year.list}
+			</table>
+		</div>
+	</div>
+
+	<!-- 不动产登记 模糊匹配 -->
+	<div class="padding6 {overview.A10216.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10216.total}条</span>
+				<span>不动产登记 - 模糊匹配</span>
+			</div>
+		</div>
+		<div class="{overview.A10216.year.display}">
+			<div class="fw-bold second-title">年份分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10216.year.list}
+			</table>
+		</div>
+	</div>
+	<!-- 车辆信息 -->
+	<div class="padding6 {overview.A10217.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10217.total}条</span>
+				<span>车辆信息</span>
+				<span>（共{overview.A10217.vehicleCount}辆车)</span>
+			</div>
+		</div>
+		<div class="{overview.A10217.year.display}">
+			<div class="fw-bold second-title">年份分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10217.year.list}
+			</table>
+		</div>
+	</div>
+
+	<!-- 金融资产 - 竞价项目 -->
+	<div class="padding6 {overview.A10213.bidding.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10213.bidding.total}条</span>
+				<span>金融资产 - 竞价项目</span>
+			</div>
+		</div>
+		<div class="{overview.A10213.bidding.projectStatus}">
+			<div class="fw-bold second-title">项目状态分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10213.bidding.projectStatus.list}
+			</table>
+		</div>
+	</div>
+	<!-- 金融资产 - 招商项目 -->
+	<div class="padding6 {overview.A10213.merchants.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10213.merchants.total}条</span>
+				<span>金融资产 - 招商项目</span>
+			</div>
+		</div>
+		<div class="{overview.A10213.merchants.investmentProjectStatus}">
+			<div class="fw-bold second-title">项目状态分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10213.merchants.investmentProjectStatus.list}
+			</table>
+		</div>
+	</div>
+	<!-- 金融资产 - 公示项目 -->
+	<div class="padding6 {overview.A10213.publicity.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10213.publicity.total}条</span>
+				<span>金融资产 - 公示项目</span>
+			</div>
+			<div class="{overview.A10213.publicity.financeProjectType}">
+				<div class="fw-bold second-title">项目类型分布</div>
+				<table class="table-td-20 table-border mg8-0">
+					{overview.A10213.publicity.financeProjectType.list}
+				</table>
+			</div>
+			<div class="{overview.A10213.publicity.year}">
+				<div class="fw-bold second-title">年份分布</div>
+				<table class="table-td-20 table-border mg8-0">
+					{overview.A10213.publicity.year.list}
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<!-- 招投标 -->
+	<div class="padding6 {overview.A10211.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10211.total}条</span>
+				<span>招投标</span>
+			</div>
+		</div>
+		<div class="{overview.A10211.year.display}">
+			<div class="fw-bold second-title">年份分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10211.year.list}
+			</table>
+		</div>
+	</div>
+</div>
+<!-- end -->
+
+<!-- 概览-风险信息 -- start -->
+<div class="{overview.risk.display}">
+	<div class="entry-title border-b">
+		<div class="fw-bold font-xl">风险信息</div>
+	</div>
+	<!-- 破产重组 -->
+	<div class="padding6 {overview.A10209.bankruptcy.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10209.bankruptcy.total}条</span>
+				<span>破产重组</span>
+			</div>
+			<div class="fw-bold second-title">年份分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10209.bankruptcy.year.list}
+			</table>
+		</div>
+	</div>
+	<!-- 失信记录 -->
+	<div class="padding6 {overview.A10206.dishonest.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10206.dishonest.total}条</span>
+				<span>失信记录</span>
+			</div>
+			<div class="fw-bold second-title">年份分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10206.dishonest.year.list}
+			</table>
+		</div>
+	</div>
+	<!-- 限制高消费 -->
+<!--	<div class="padding6 {overview.A10214.display}">-->
+<!--		<div class="entry-title">-->
+<!--			<div class="et-cot font-l">-->
+<!--				<span class="fw-bold mg-r">{overview.A10214.total}条</span>-->
+<!--				<span>限制高消费</span>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--		<div class="{overview.A10214.year.display}">-->
+<!--			<div class="fw-bold second-title">年份分布</div>-->
+<!--			<table class="table-td-20 table-border mg8-0">-->
+<!--				{overview.A10214.year.list}-->
+<!--			</table>-->
+<!--		</div>-->
+<!--	</div>-->
+	<!-- 涉诉信息 -->
+	<div class="padding6 {overview.A10206.trial.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10206.trial.total}条</span>
+				<span>涉诉信息 - 立案信息</span>
+			</div>
+		</div>
+
+		<div class="{overview.A10206.trial.year}">
+			<div class="fw-bold second-title">年份分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10206.trial.year.list}
+			</table>
+		</div>
+		<div class="{overview.A10206.trial.case}">
+			<div class="fw-bold second-title">案件类型分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10206.trial.case.list}
+			</table>
+		</div>
+	</div>
+	<div class="padding6 {overview.A10206.court.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10206.court.total}条</span>
+				<span>涉诉信息 - 开庭信息</span>
+			</div>
+		</div>
+		<div class="{overview.A10206.court.year}">
+			<div class="fw-bold second-title">年份分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10206.court.year.list}
+			</table>
+		</div>
+		<div class="{overview.A10206.court.reason}">
+			<div class="fw-bold second-title">案由分布</div>
+			<table class="table-td-20 table-border mg8-0">
+				{overview.A10206.court.reason.list}
+			</table>
+		</div>
+
+	</div>
+	<div class="padding6 {overview.A10206.judgment.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10206.judgment.total}条</span>
+				<span>涉诉信息 - 裁判文书</span>
+			</div>
+			<div class="{overview.A10206.judgment.year}">
+				<div class="fw-bold second-title">年份分布</div>
+				<table class="table-td-20 table-border mg8-0">
+					{overview.A10206.judgment.year.list}
+				</table>
+			</div>
+			<div class="{overview.A10206.judgment.reason}">
+				<div class="fw-bold second-title">案由分布</div>
+				<table class="table-td-20 table-border mg8-0">
+					{overview.A10206.judgment.reason.list}
+				</table>
+			</div>
+			<div class="{overview.A10206.judgment.case}">
+				<div class="fw-bold second-title">案件类型分布</div>
+				<table class="table-td-25 table-border mg8-0">
+					{overview.A10206.judgment.case.list}
+				</table>
+			</div>
+		</div>
+	</div>
+	<!--  经营风险 -->
+	<div class="padding6 {overview.A10207.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">
+				<span class="fw-bold mg-r">{overview.A10207.total}条</span>
+				<span>经营风险信息</span>
+			</div>
+		</div>
+		<table class="table-td-25 table-border mg8-0">
+			{overview.A10207.list}
+		</table>
+	</div>
+</div>
+<!-- end -->
+
+<!-- 概览-工商基本情况 -- start -->
+<div class="{overview.A10208.display} border-b">
+	<div class="entry-title border-b">
+		<div class="fw-bold font-xl">工商基本情况</div>
+	</div>
+	<!-- 基本信息 -->
+	<div class="padding6 {overview.A10208.baseInfo.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">基本信息</div>
+			<table class="table-td-50 table-border mg8">
+				<tr>
+					<td>
+						<span class='remark'>法定代表人：
+							<label class='title'>{overview.A10208.baseInfo.legalPersonName}</label></span>
+					</td>
+					<td>
+						<span class='remark'>经营状态：
+							<label class='title'>{overview.A10208.baseInfo.regStatus}</label></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class='remark'>注册资本：
+							<label class='title'>{overview.A10208.baseInfo.regCapital}</label></span>
+					</td>
+				<td>
+						<span class='remark'>成立日期：
+							<label class='title'>{overview.A10208.baseInfo.establishTime}</label></span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<span class='remark'>注册地址：
+						<label class='title'>{overview.A10208.baseInfo.regLocation}</label></span>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!-- 股东情况 -->
+	<div class="padding6 {overview.A10208.shareholderInfos.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">股东情况</div>
+			<table class="table-td-50 table-border mg8">
+				<tr>
+					<th>股东名称</th>
+					<th>持股比</th>
+				</tr>
+				{overview.A10208.shareholderInfos.list}
+			</table>
+		</div>
+	</div>
+	<!-- 企业规模 -->
+	<div class="padding6 {overview.A10208.businessScaleInfo.display}">
+		<div class="entry-title">
+			<div class="et-cot font-l">企业规模</div>
+			<table class="table-td-50 table-border mg8">
+				<tr>
+					<td>
+						<div class='nAndI'>
+							<span class='n-title'>人员规模：</span>
+							<span class='n-desc'>{overview.A10208.businessScaleInfo.employeeNum}</span>
+						</div>
+					</td>
+					<td>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<!-- end -->
+
+<!-- 资产拍卖类目 智能精准匹配 -->
+<div class="{asset.accurate.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">资产拍卖 - 智能精准匹配 {asset.accurate.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			<!-- 资产拍卖列表 -->
+			{asset.accurate.list}
+		</table>
+	</div>
+</div>
+<!-- 资产拍卖类目 模糊匹配-->
+<div class="{asset.blurry.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">资产拍卖 - 模糊匹配 {asset.blurry.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			<!-- 资产拍卖列表 -->
+			{asset.blurry.list}
+		</table>
+	</div>
+</div>
+
+<!-- 土地信息【出让结果 】类目 -->
+<div class="{land.result.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">土地信息 - 出让结果 {land.result.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{land.result.list}
+		</table>
+	</div>
+</div>
+<!-- 土地信息【土地转让】类目 -->
+<div class="{land.transfer.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">土地信息 - 土地转让 {land.transfer.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{land.transfer.list}
+		</table>
+	</div>
+</div>
+<!-- 土地信息【土地抵押】类目 -->
+<div class="{land.mortgage.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">土地信息 - 土地抵押 {land.mortgage.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{land.mortgage.list}
+		</table>
+	</div>
+</div>
+
+<!-- 无形资产【排污权 】类目 -->
+<div class="{intangible.emission.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">无形资产 - 排污权 {intangible.emission.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{intangible.emission.list}
+		</table>
+	</div>
+</div>
+<!-- 无形资产【矿业权】类目 -->
+<div class="{intangible.mining.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">无形资产 - 矿业权 {intangible.mining.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{intangible.mining.list}
+		</table>
+	</div>
+</div>
+<!-- 无形资产【商标专利】类目 -->
+<div class="{intangible.trademark.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">无形资产 - 商标专利 {intangible.trademark.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{intangible.trademark.list}
+		</table>
+	</div>
+</div>
+<!-- 无形资产【建筑建造资质】类目 -->
+<div class="{intangible.construct.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">无形资产 - 建筑建造资质 {intangible.construct.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{intangible.construct.list}
+		</table>
+	</div>
+</div>
+
+<!-- 代位权【立案】类目 -->
+<div class="{subrogation.trial.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">代位权 - 立案 {subrogation.trial.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{subrogation.trial.list}
+		</table>
+	</div>
+</div>
+<!-- 代位权【开庭】类目 -->
+<div class="{subrogation.court.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">代位权 - 开庭 {subrogation.court.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{subrogation.court.list}
+		</table>
+	</div>
+</div>
+<!-- 代位权【裁判文书】类目 -->
+<div class="{subrogation.judgment.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">代位权 - 裁判文书 {subrogation.judgment.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{subrogation.judgment.list}
+		</table>
+	</div>
+</div>
+
+<!-- 股权质押【股权出质】类目 -->
+<div class="{stock.pledgor.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">股权质押 - 股权出质 {stock.pledgor.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{stock.pledgor.list}
+		</table>
+	</div>
+</div>
+<!-- 股权质押【股权质权】类目 -->
+<div class="{stock.pledgee.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">股权质押 - 股权质权 {stock.pledgee.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{stock.pledgee.list}
+		</table>
+	</div>
+</div>
+
+<!-- 动产抵押【抵押】类目 -->
+<div class="{mortgage.owner.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">动产抵押 - 抵押 {mortgage.owner.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{mortgage.owner.list}
+		</table>
+	</div>
+</div>
+<!-- 动产抵押【抵押权】类目 -->
+<div class="{mortgage.people.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">动产抵押 - 抵押权 {mortgage.people.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{mortgage.people.list}
+		</table>
+	</div>
+</div>
+
+<!-- 在建工程- 建设单位 -->
+<div class="{onbuild.construct.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">在建工程 - 建设单位 {onbuild.construct.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{onbuild.construct.list}
+		</table>
+	</div>
+</div>
+
+<!-- 在建工程- 中标单位 -->
+<div class="{onbuild.winbid.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">在建工程 - 中标单位 {onbuild.winbid.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{onbuild.winbid.list}
+		</table>
+	</div>
+</div>
+
+<!-- 在建工程- 施工单位 -->
+<div class="{onbuild.underway.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">在建工程 - 施工单位 {onbuild.underway.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{onbuild.underway.list}
+		</table>
+	</div>
+</div>
+
+
+<!-- 不动产登记 智能精准匹配 -->
+<div class="{realEstate.accurate.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">不动产登记 - 智能精准匹配 {realEstate.accurate.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			<!-- 不动产登记列表 -->
+			{realEstate.accurate.list}
+		</table>
+	</div>
+</div>
+<!-- 不动产登记 模糊匹配-->
+<div class="{realEstate.blurry.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">不动产登记 - 模糊匹配 {realEstate.blurry.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			<!-- 不动产登记列表 -->
+			{realEstate.blurry.list}
+		</table>
+	</div>
+</div>
+
+<!-- 车辆信息 -->
+<div class="{car.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">车辆信息 {car.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{car.list}
+		</table>
+	</div>
+</div>
+
+<!-- 资产 - 【查解封资产】 类目 -->
+<div class="{unsealList.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">查/解封资产 {unsealList.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table>
+			{unsealList.list}
+		</table>
+	</div>
+</div>
+
+<!-- 金融资产【竞价项目】类目 -->
+<div class="{finance.bidding.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">金融资产 - 竞价项目 {finance.bidding.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{finance.bidding.list}
+		</table>
+	</div>
+</div>
+<!-- 金融资产【招商项目】类目 -->
+<div class="{finance.merchants.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">金融资产 - 招商项目 {finance.merchants.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30 fix-top-table" >
+			{finance.merchants.list}
+		</table>
+	</div>
+</div>
+<!-- 金融资产【竞价项目】类目 -->
+<div class="{finance.publicity.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">金融资产 - 公示项目 {finance.publicity.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{finance.publicity.list}
+		</table>
+	</div>
+</div>
+
+<!-- 资产 - 【招投标】 类目 -->
+<div class="{bidding.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">招投标 {bidding.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{bidding.list}
+		</table>
+	</div>
+</div>
+
+
+<!--风险-->
+<!-- 风险 - 经营【破产重组】类目 -->
+<div class="{bankruptcy.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">破产重组 {bankruptcy.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{bankruptcy.list}
+		</table>
+	</div>
+</div>
+<!-- 风险 - 失信记录 类目 -->
+<div class="{lawsuit.dishonest.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">失信记录 {lawsuit.dishonest.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{lawsuit.dishonest.list}
+		</table>
+	</div>
+</div>
+
+<!-- 涉诉【立案】类目 -->
+<div class="{lawsuit.trial.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">涉诉 - 立案 {lawsuit.trial.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{lawsuit.trial.list}
+		</table>
+	</div>
+</div>
+<!-- 涉诉【开庭】类目 -->
+<div class="{lawsuit.court.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">涉诉 - 开庭 {lawsuit.court.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{lawsuit.court.list}
+		</table>
+	</div>
+</div>
+<!-- 【涉诉文书】类目 -->
+<div class="{lawsuit.judgment.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">涉诉文书 {lawsuit.judgment.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{lawsuit.judgment.list}
+		</table>
+	</div>
+</div>
+
+<!-- 风险 - 【限制高消费】类目 -->
+<!--<div class="{limitHeight.display}">-->
+<!--	&lt;!&ndash; 类目标题 &ndash;&gt;-->
+<!--	<div class="entry-title">-->
+<!--		<div class="et-cot fw-bold font-l">限制高消费 {limitHeight.total}</div>-->
+<!--	</div>-->
+<!--	&lt;!&ndash; 类目表格 &ndash;&gt;-->
+<!--	<div class="entry-table border-t">-->
+<!--		<table class="table-td-s-30">-->
+<!--			{limitHeight.list}-->
+<!--		</table>-->
+<!--	</div>-->
+<!--</div>-->
+
+<!-- 经营【经营异常】类目 -->
+<div class="{abnormal.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">经营异常 {abnormal.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{abnormal.list}
+		</table>
+	</div>
+</div>
+<!-- 经营【严重违法】类目 -->
+<div class="{illegal.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">严重违法 {illegal.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{illegal.list}
+		</table>
+	</div>
+</div>
+<!-- 经营【税收违法 】类目 -->
+<div class="{tax.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">税收违法 {tax.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{tax.list}
+		</table>
+	</div>
+</div>
+<!-- 经营【行政处罚】类目 -->
+<div class="{punishment.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">行政处罚 {punishment.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{punishment.list}
+		</table>
+	</div>
+</div>
+<!-- 经营【环保处罚】类目 -->
+<div class="{epb.display}">
+	<!-- 类目标题 -->
+	<div class="entry-title">
+		<div class="et-cot fw-bold font-l">环保处罚 {epb.total}</div>
+	</div>
+	<!-- 类目表格 -->
+	<div class="entry-table border-t">
+		<table class="table-td-s-30">
+			{epb.list}
+		</table>
+	</div>
+</div>
+
+<!-- 基本信息 -->
+<div class="{baseInfo.display}">
+	<div class="entry-title">
+		<div class="et-cot font-l fw-bold">基本信息</div>
+		<table class="table-border mg8 table-baseInfo">
+			<tr>
+				<td>法定代表人</td>
+				<td>{baseInfo.legalPerson}</td>
+				<td>组织机构代码</td>
+				<td>{baseInfo.orgNumber}</td>
+			</tr>
+			<tr>
+				<td>统一社会信用代码</td>
+				<td>{baseInfo.creditCode}</td>
+				<td>纳税人识别号</td>
+				<td>{baseInfo.taxNumber}</td>
+			</tr>
+			<tr>
+				<td>成立日期</td>
+				<td>{baseInfo.establishTime}</td>
+				<td>营业期限</td>
+				<td>{baseInfo.timeLimit}</td>
+			</tr>
+			<tr>
+				<td>注册资本</td>
+				<td>{baseInfo.regCapital}</td>
+				<td>实缴资本</td>
+				<td>{baseInfo.actualCapital}</td>
+			</tr>
+			<tr>
+				<td>经营状态</td>
+				<td>{baseInfo.regStatus}</td>
+				<td>登记机关</td>
+				<td>{baseInfo.regInstitute}</td>
+			</tr>
+			<tr>
+				<td>企业类型</td>
+				<td>{baseInfo.companyOrgType}</td>
+				<td>核准日期</td>
+				<td>{baseInfo.approvedTime}</td>
+			</tr>
+			<tr>
+				<td>所属行业</td>
+				<td>{baseInfo.industry}</td>
+				<td>工商注册号</td>
+				<td>{baseInfo.regNumber}</td>
+			</tr>
+			<tr>
+				<td>人员规模</td>
+				<td>{baseInfo.scale}</td>
+				<td>参保人数</td>
+				<td>{baseInfo.insuranceNum}</td>
+			</tr>
+			<tr>
+				<td>英文名</td>
+				<td>{baseInfo.englishName}</td>
+				<td>注册地址</td>
+				<td>{baseInfo.regLocation}</td>
+			</tr>
+			<tr>
+				<td>经营范围</td>
+				<td colspan="3">{baseInfo.businessScope}</td>
+			</tr>
+			 
+		</table>
+	</div>
+</div>
+<!-- 主要人员 -->
+<div class="{mainPerson.display}">
+	<div class="entry-title">
+		<div class="et-cot font-l fw-bold">主要人员 {mainPerson.total}</div>
+		<table class="table-border mg8">
+			<tr>
+				<th style="width: 40px">序号</th>
+				<th>姓名</th>
+				<th>职务</th>
+			</tr>
+			{mainPerson.list}
+		</table>
+	</div>
+</div>
+<!-- 股东信息 -->
+<div class="{stockholder.display}">
+	<div class="entry-title">
+		<div class="et-cot font-l fw-bold">股东信息 {stockholder.total}</div>
+		<table class="table-border mg8">
+			<tr>
+				<th style="width: 40px">序号</th>
+				<th>股东基本信息</th>
+				<th>出资比例</th>
+				<th>认缴出资额</th>
+			</tr>
+			{stockholder.list}
+		</table>
+	</div>
+</div>
+<!-- 分支机构 -->
+<div class="{branch.display}">
+	<div class="entry-title">
+		<div class="et-cot font-l fw-bold">分支机构 {branch.total}</div>
+		<table class="table-border mg8">
+			<tr>
+				<th style="width: 40px">序号</th>
+				<th>机构名称</th>
+				<th>法定代表人</th>
+				<th>注册资本</th>
+				<th>注册时间</th>
+				<th>经营状态</th>
+			</tr>
+			{branch.list}
+		</table>
+	</div>
+</div>
+<!-- 对外投资 -->
+<div class="{investment.display}">
+	<div class="entry-title">
+		<div class="et-cot font-l fw-bold">对外投资 {investment.total}</div>
+		<table class="table-border mg8">
+			<tr>
+				<th style="width: 40px">序号</th>
+				<th>对外投资企业名称</th>
+				<th>法定代表人</th>
+				<th>注册资本</th>
+				<th>投资占比</th>
+				<th>注册时间</th>
+				<th>经营状态</th>
+			</tr>
+			{investment.list}
+		</table>
+	</div>
+</div>
+<!-- 工商变更 -->
+<div class="{change.display}">
+	<div class="entry-title">
+		<div class="et-cot font-l fw-bold">工商变更 {change.total}</div>
+		<table class="table-border mg8 page-break-style">
+			<tr>
+				<th style="width: 30px">序号</th>
+				<th style="width: 90px">变更日期</th>
+				<th style="width: 70px">变更事项</th>
+				<th>变更前内容</th>
+				<th>变更后内容</th>
+			</tr>
+			{change.list}
+		</table>
+	</div>
+</div>
+
+</body>
+
+</html>
